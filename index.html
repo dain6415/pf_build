@@ -1,83 +1,396 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>내 포폴</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e471157d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      body {
+        background: var(--mainBg-color);
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
 
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
 
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
+      .swiper-slide {
+        border-bottom: 1px solid #000;
+        /* height: calc((100% - 30px) / 2) !important; */
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-AeuJqmSH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-MaHH3mN4.css">
+  </head>
 
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+  <body>
+    <div class="line">
+      <div class="h-line h-line1"></div>
+      <div class="h-line h-line2"></div>
+      <div class="h-line h-line3"></div>
+      <div class="h-line h-line4"></div>
+      <div class="h-line h-line5"></div>
+      <div class="h-line h-line6"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+    <!-- header -->
+    <header id="header" role="banner">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="#">portfolio<em>ux/ui / pulisher</em></a>
+        </div>
+        <nav class="header__nav" role="navigation" aria-label="메인메뉴">
+          <ul>
+            <li class="on"><a href="#intro">home</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#uxui">ux/ui</a></li>
+            <li><a href="#about">about</a></li>
+          </ul>
+        </nav>
+        <div
+          class="header__nav_mobile"
+          id="headerToggle"
+          aria-controls="primary-menu"
+          aria-expanded="flase"
+          role="button"
+        >
+          <span></span>
+        </div>
+      </div>
+    </header>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-</body>
+    <!-- ************************ -->
+    <main>
+      <!-- intro -->
+      <section id="intro" data-bg="#f5f5f5">
+        <div class="sect_inner">
+          <div class="intro_title">
+            <h2>dain</h2>
+            <p>web</p>
+            <p>portfolio</p>
+            <p></p>
+          </div>
+        </div>
+      </section>
 
+
+      <!-- project -->
+      <section id="project" data-bg="#000">
+        <div class="sect_inner">
+          <div class="sect_title">
+            <div class="po_ab">
+              <p>project.</p>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper_box">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                  <a href="" target="_blank">
+                    <div class="summary flex-sb">
+                      <div class="number"><p>1</p></div>
+                      <div class="txt">
+                        <p class="title">identity</p>
+                        <p>
+                          "ddfsdfee<br>
+                          sdfsec idsufoe sdk j
+                        </p>
+                      </div>
+                    </div>
+                    <!-- <div class="keyword">
+                      <p>IDENTITY</p>
+                      <p>LOGO</p>
+                      <p>기획</p>
+                      <p>개인프로젝트</p>
+                    </div> -->
+                    <div class="sticker">
+                      <!-- <img src="./src/img/SVG/identity.svg" alt="아이덴티티 이미지" /> -->
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide slide2">
+                  <a href="" target="_blank">
+                    <div class="summary flex-sb">
+                      <div class="number"><p>2</p></div>
+                      <div class="txt">
+                        <p class="title">identity</p>
+                        <p>
+                          "나는 누구인가?"<br />
+                          <span>나의 특징</span>을 모아 고양이에 비유한<br />아이덴티티
+                          디자인
+                        </p>
+                      </div>
+                    </div>
+                    <!-- <div class="keyword">
+                      <p>WEB</p>
+                      <p>renewal</p>
+                      <p>개인프로젝트</p>
+                    </div> -->
+                    <div class="sticker">
+                      <img src="/assets/iden-B8nbq-B-.svg" alt="아이덴티티 이미지" />
+                    </div>
+                  </a>
+                </div>
+                <!-- <div class="swiper-slide slide2">
+                  <a href="" target="_blank">
+                    <div class="summary flex-sb">
+                      <div class="number"><p>2</p></div>
+                      <div class="txt">
+                        <p class="title">NewJeans</p>
+                        <p>
+                          <span>그리드</span>를 활용한<br />
+                          뉴진스의 &lt;Supernatural&gt; 앨범 발매 기념<br />
+                          공식 <span class="delay">홈페이지 리뉴얼</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="keyword">
+                      <p>WEB</p>
+                      <p>renewal</p>
+                      <p>개인프로젝트</p>
+                    </div>
+                    <div class="sticker">
+                      <img
+                        src="./src/img/SVG/nj4.svg"
+                        alt="뉴진스의 슈퍼내추럴 로고"
+                      />
+                    </div>
+                  </a>
+                </div> -->
+                <div class="swiper-slide slide3">
+                  <a href="" target="_blank">
+                    <div class="summary flex-sb">
+                      <div class="number"><p>3</p></div>
+                      <div class="txt">
+                        <p class="title">서울시립미술관 SeMA</p>
+                        <p>서울시립미술관 홈페이지 리뉴얼 디자인</p>
+                      </div>
+                    </div>
+                    <!-- <div class="keyword">
+                      <p>WEB</p>
+                      <p>renewal</p>
+                      <p>기획</p>
+                      <p>개인프로젝트</p>
+                    </div> -->
+                    <div class="sticker">
+                      <img
+                        src="/assets/sema-XQtO-pZ6.svg"
+                        alt="서울시립미술관 로고"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide slide4">
+                  <a href="" target="_blank">
+                    <div class="summary flex-sb">
+                      <div class="number"><p>4</p></div>
+                      <div class="txt">
+                        <p class="title">selmin</p>
+                        <p>
+                          복용 알림과 기록을 통해<br />
+                          <span>건강 관리를 간편하게</span> 관리하는<br />
+                          효율적인 <span>복약 관리 앱</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="keyword">
+                      <p>APP</p>
+                      <p>기획</p>
+                      <p>개인프로젝트</p>
+                    </div>
+                    <div class="sticker">
+                      <img src="data:image/svg+xml,%3csvg%20width='60'%20height='60'%20viewBox='0%200%2060%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_687_2266)'%3e%3crect%20width='60'%20height='60'%20fill='white'/%3e%3crect%20width='60'%20height='60'%20fill='%23FF671A'/%3e%3cpath%20d='M46.9521%2031.1605C46.8835%2032.0645%2046.7407%2032.9519%2046.5349%2033.8113C44.8093%2040.9435%2038.4436%2046.4127%2030.7866%2046.954C27.0553%2047.2163%2023.5525%2046.3401%2020.5982%2044.6436C19.3125%2043.9013%2019.0897%2042.1713%2020.1468%2041.1389L40.9979%2020.7691C42.055%2019.7366%2043.8264%2019.9599%2044.5864%2021.2155C44.9693%2021.8517%2045.3121%2022.5103%2045.6093%2023.1967C46.6664%2025.6132%2047.1635%2028.3254%2046.9521%2031.1605Z'%20fill='white'/%3e%3cpath%20d='M13.0478%2028.8393C13.1164%2027.9352%2013.2592%2027.0479%2013.4649%2026.1884C15.1906%2019.0562%2021.5562%2013.5871%2029.2133%2013.0457C32.9446%2012.7834%2036.4474%2013.6596%2039.4017%2015.3562C40.6874%2016.0984%2040.9102%2017.8285%2039.8531%2018.8609L19.002%2039.2307C17.9449%2040.2631%2016.1735%2040.0399%2015.4135%2038.7842C15.0306%2038.148%2014.6878%2037.4895%2014.3906%2036.8031C13.3335%2034.3866%2012.8364%2031.6743%2013.0478%2028.8393Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_687_2266'%3e%3crect%20width='60'%20height='60'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="앱 이미지" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper_btn">
+              <div class="btn_box">
+                <div class="swp_btn swiper-button-prev"></div>
+              </div>
+              <div class="btn_box">
+                <div class="swp_btn swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+git 
+
+      <!-- work -->
+      <section id="work" data-bg="#000">
+        <div class="sect_inner">
+          <div class="work_top_list">
+            <div class="sect_title">
+              <div class="po_ab">
+                <p class="sect_t">work.</p>
+                <p class="txt">지금의 제가 되기 위한 여정입니다.</p>
+              </div>
+            </div>
+
+            <!-- list -->
+            <div class="list_box">
+              <ul>
+                <li>
+                  <a href="">
+                    <div class="list_summary">
+                      <p class="list_title">망그러진 곰</p>
+                      <p class="ex">설명을 쓰시오</p>
+                      <p class="type">aaaa</p>
+                    </div>
+                    <div class="right_box">
+                      <div class="r-poab"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="list_summary">
+                      <p class="list_title">NONFICTION</p>
+                      <p class="ex">sticky를 활용한 <br>
+                        논픽션 리뉴얼 작업</p>
+                      <p class="type">aaaa</p>
+                    </div>
+                    <div class="right_box">
+                      <div class="r-poab"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="list_summary">
+                      <p class="list_title">청와대</p>
+                      <p class="ex">
+                        다양한 swiper를 활용한<br>
+                        청화대 홈페이지 작업
+                      </p>
+                      <p class="type">aaaa</p>
+                    </div>
+                    <div class="right_box">
+                      <div class="r-poab"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="list_summary">
+                      <p class="list_title">NewJeans</p>
+                      <p class="ex">
+                        grid를 활용한 뉴진스 공식<br> 홈페이지 리뉴얼 작업
+                      </p>
+                      <p class="type">aaaa</p>
+                    </div>
+                    <div class="right_box">
+                      <div class="r-poab"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list_box2">
+            <ul>
+              <li>
+                <a href="" target="_blank">
+                  <p class="date">날짜</p>
+                  <p class="list_title">죠스 떡볶이</p>
+                  <p class="ex">설명을 쓰시오</p>
+                  <div class="right_box">
+                    <div class="r-poab"
+                      ><i class="fa-solid fa-arrow-right"></i
+                    ></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <p class="date">aaaa</p>
+                  <p class="list_title">칠성사이다</p>
+                  <p class="ex">설명을 쓰시오</p>
+                  <div class="right_box">
+                    <div class="r-poab"
+                      ><i class="fa-solid fa-arrow-right"></i
+                    ></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <p class="date">aaaa</p>
+                  <p class="list_title">인테리어</p>
+                  <p class="ex">설명을 쓰시오</p>
+                  <div class="right_box">
+                    <div class="r-poab"
+                      ><i class="fa-solid fa-arrow-right"></i
+                    ></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <p class="date">aaaa</p>
+                  <p class="list_title">인테리어</p>
+                  <p class="ex">설명을 쓰시오</p>
+                  <div class="right_box">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <p class="date">aaaa</p>
+                  <p class="list_title">yes 24</p>
+                  <p class="ex">설명을 쓰시오</p>
+                  <div class="right_box">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- -------------------------------------------------------------------------------------------- -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- <script src="./src/js/project.js"></script> -->
+  </body>
 </html>
