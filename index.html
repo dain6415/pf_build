@@ -15,88 +15,180 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
+    />
     <!-- Demo styles -->
     <style>
+      @import url("https://fonts.cdnfonts.com/css/hey-november");
       html,
       body {
         position: relative;
-        height: 100%;
+        height: auto;
       }
-
       body {
         background: var(--mainBg-color);
         color: #000;
         margin: 0;
         padding: 0;
       }
-
       .swiper {
         width: 100%;
         height: 100%;
       }
-
       .swiper-slide {
         border-bottom: 1px solid #000;
         /* height: calc((100% - 30px) / 2) !important; */
       }
     </style>
-    <script type="module" crossorigin src="./assets/index-AeuJqmSH.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-MaHH3mN4.css">
+    <script type="module" crossorigin src="/assets/index-DQD4CM-Y.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CCZ-gcCh.css">
   </head>
 
   <body>
+    <!-- <div id="custom_cursor"><span></span></div> -->
     <div class="line">
       <div class="h-line h-line1"></div>
       <div class="h-line h-line2"></div>
       <div class="h-line h-line3"></div>
       <div class="h-line h-line4"></div>
       <div class="h-line h-line5"></div>
-      <div class="h-line h-line6"></div>
+      <!-- <div class="h-line h-line6"></div> -->
     </div>
-    <!-- header -->
-    <header id="header" role="banner">
-      <div class="header__inner">
-        <div class="header__logo">
-          <a href="#">portfolio<em>ux/ui / pulisher</em></a>
-        </div>
-        <nav class="header__nav" role="navigation" aria-label="메인메뉴">
-          <ul>
-            <li class="on"><a href="#intro">home</a></li>
-            <li><a href="#project">project</a></li>
-            <li><a href="#work">work</a></li>
-            <li><a href="#uxui">ux/ui</a></li>
-            <li><a href="#about">about</a></li>
-          </ul>
-        </nav>
-        <div
-          class="header__nav_mobile"
-          id="headerToggle"
-          aria-controls="primary-menu"
-          aria-expanded="flase"
-          role="button"
-        >
-          <span></span>
-        </div>
-      </div>
-    </header>
-
 
     <!-- ************************ -->
     <main>
       <!-- intro -->
       <section id="intro" data-bg="#f5f5f5">
+        <!-- header -->
+        <header id="header" role="banner">
+          <div class="header__inner">
+            <div class="header__logo">
+              <a href="#">portfolio<em>ux/ui / pulisher</em></a>
+            </div>
+            <nav class="header__nav" role="navigation" aria-label="메인메뉴">
+              <ul>
+                <li ><a href="#intro" class="on">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#uxui">ux/ui</a></li>
+              </ul>
+            </nav>
+            <div
+              class="header__nav_mobile"
+              id="headerToggle"
+              aria-controls="primary-menu"
+              aria-expanded="flase"
+              role="button"
+            >
+              <span></span>
+            </div>
+          </div>
+        </header>
+        <!-- <div class="home__down">
+          <svg viewBox="0 0 800 800" width="" height="">
+            <path fill="#fff" d="M657,443c-13-13.1-34.1-13.2-47.1-0.2c-0.1,0.1-0.1,0.1-0.2,0.2L433.3,619.7V100c0-18.4-14.9-33.3-33.3-33.3
+              c-18.4,0-33.3,14.9-33.3,33.3v519.7L190.3,443c-13.1-13.1-34.3-13.1-47.3,0c-13.1,13.1-13.1,34.3,0,47.3l233.3,233.3
+              c13,13.1,34.1,13.2,47.1,0.2c0.1-0.1,0.1-0.1,0.2-0.2L657,490.3c13.1-13,13.2-34.1,0.2-47.1C657.1,443.1,657.1,443.1,657,443z"/>
+            </svg>
+        </div> -->
+        <div class="blend"></div>
         <div class="sect_inner">
+          <div class="stickers">
+            <div class="sticker black1">
+              <img src="/assets/black-C7QOggTt.svg" alt="인트로 스티커 이미지" />
+            </div>
+            <div class="sticker long1">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                alt="인트로 스티커 이미지"
+              />
+            </div>
+            <div class="sticker blue1">
+              <img src="/assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+            </div>
+            <div class="sticker black2">
+              <img src="/assets/black-C7QOggTt.svg" alt="인트로 스티커 이미지" />
+            </div>
+            <div class="sticker blue2">
+              <img src="/assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+            </div>
+            <div class="sticker long2">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                alt="인트로 스티커 이미지"
+              />
+            </div>
+            <div class="sticker blue3">
+              <img src="/assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+            </div>
+            <!-- <div class="sticker long4">
+              <img
+                src="./src/img/SVG/blue_long.svg"
+                alt="인트로 스티커 이미지"
+              />
+            </div> -->
+            <div class="sticker long3">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                alt="인트로 스티커 이미지"
+              />
+            </div>
+          </div>
           <div class="intro_title">
-            <h2>dain</h2>
-            <p>web</p>
-            <p>portfolio</p>
-            <p></p>
+            <!-- <p class="web">web</p> -->
+            <p class="publisher">Publisher</p>
+            <!-- <p class="portfolio">portfolio</p> -->
+
+            <!-- <svg class="publisher-stroke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 60">
+              <text x="10" y="40" font-size="80" fill="black">Publisher</text>
+            </svg> -->
+
+            <p class="portfolio">UI/UX portfolio</p>
+
           </div>
         </div>
       </section>
 
+      <!-- about -->
+      <section id="about" data-bg="#f5f5f5">
+        <div class="sect_inner">
+          <div class="sect_title">
+            <div class="po_ab">
+              <!-- <p>about</p> -->
+            </div>
+          </div>
+          <div class="txt">
+            <ul>
+              <li>
+                <p class="keyword">완성에 대한 디테일</p>
+                <p>
+                  어떤 일이든 완성은 디테일에서 결정된다고 생각합니다. 저는 작은 디테일 하나라도 놓치지 않으려는 태도를 중요하게 여기며, 이를 통해 작업의 완성도를 높이기 위해 항상 노력합니다. 완벽주의라는 단어가 어울릴 정도는 아니지만, 작업의 완성도를 높이기 위해 노력하는 편입니다.
+                </p>
+              </li>
+              <!-- <li>
+                <p class="keyword">디테일 집착</p>
+                <p>
+                  저는 한 가지에 푹 빠지는 스타일이에요. 디테일에 집착하는
+                  편이라, 한 번 시작하면 될 때까지 파고드는 경향이 있어요. 계속
+                  머리를 굴리다가 "아, 이건 정말 안되겠다" 싶을 때에서야 손을
+                  놓습니다.
+                   <span>장점이라면 무언가를 끝까지 해내는 집념이 있다는 것.</span>
+                  하지만 그런 과정을 통해 완성도 높은 결과물을 만들어 내는 것이 제가 가진 가장 큰 강점이라고 생각합니다.
+                </p>
+              </li> -->
+              <li>
+                <p class="keyword">
+                  과정에서의 성취감이 저를 앞으로 나아가게 합니다
+                </p>
+                <p>
+                  저는 디자인을 처음부터 좋아했던 건 아니었어요. 하지만 어느새, 하나의 작업을 끝내고 결과물을 마주했을 때 느끼는 성취감이 제게 큰 원동력이 되고 있다는 걸 깨달았죠. 완벽하지 않아도, 한 발 한
+                  발 꾸준히 나아가는 과정 속에서 얻는 보람이 지금의 저를 만들어 주었습니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <!-- project -->
       <section id="project" data-bg="#000">
@@ -112,13 +204,13 @@
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide slide1">
-                  <a href="" target="_blank">
+                  <a href="#" target="_blank">
                     <div class="summary flex-sb">
                       <div class="number"><p>1</p></div>
                       <div class="txt">
                         <p class="title">identity</p>
                         <p>
-                          "ddfsdfee<br>
+                          "ddfsdfee<br />
                           sdfsec idsufoe sdk j
                         </p>
                       </div>
@@ -135,7 +227,7 @@
                   </a>
                 </div>
                 <div class="swiper-slide slide2">
-                  <a href="" target="_blank">
+                  <a href="#" target="_blank">
                     <div class="summary flex-sb">
                       <div class="number"><p>2</p></div>
                       <div class="txt">
@@ -147,18 +239,16 @@
                         </p>
                       </div>
                     </div>
-                    <!-- <div class="keyword">
-                      <p>WEB</p>
-                      <p>renewal</p>
-                      <p>개인프로젝트</p>
-                    </div> -->
                     <div class="sticker">
-                      <img src="./assets/iden-B8nbq-B-.svg" alt="아이덴티티 이미지" />
+                      <img
+                        src="/assets/iden-B8nbq-B-.svg"
+                        alt="아이덴티티 이미지"
+                      />
                     </div>
                   </a>
                 </div>
                 <!-- <div class="swiper-slide slide2">
-                  <a href="" target="_blank">
+                  <a href="#" target="_blank">
                     <div class="summary flex-sb">
                       <div class="number"><p>2</p></div>
                       <div class="txt">
@@ -184,7 +274,7 @@
                   </a>
                 </div> -->
                 <div class="swiper-slide slide3">
-                  <a href="" target="_blank">
+                  <a href="#" target="_blank">
                     <div class="summary flex-sb">
                       <div class="number"><p>3</p></div>
                       <div class="txt">
@@ -200,14 +290,14 @@
                     </div> -->
                     <div class="sticker">
                       <img
-                        src="./assets/sema-XQtO-pZ6.svg"
+                        src="/assets/sema_logo_%EC%9B%90%EB%9E%98-XQtO-pZ6.svg"
                         alt="서울시립미술관 로고"
                       />
                     </div>
                   </a>
                 </div>
                 <div class="swiper-slide slide4">
-                  <a href="" target="_blank">
+                  <a href="#" target="_blank">
                     <div class="summary flex-sb">
                       <div class="number"><p>4</p></div>
                       <div class="txt">
@@ -242,7 +332,6 @@
           </div>
         </div>
       </section>
-git 
 
       <!-- work -->
       <section id="work" data-bg="#000">
@@ -254,116 +343,113 @@ git
                 <p class="txt">지금의 제가 되기 위한 여정입니다.</p>
               </div>
             </div>
-
+          </div>
             <!-- list -->
-            <div class="list_box">
-              <ul>
-                <li>
-                  <a href="">
-                    <div class="list_summary">
-                      <p class="list_title">망그러진 곰</p>
-                      <p class="ex">설명을 쓰시오</p>
-                      <p class="type">aaaa</p>
+          <div class="list_box">
+            <ul>
+              <li>
+                <a href="">
+                  <div class="list_summary">
+                    <p class="list_title">망그러진 곰</p>
+                    <p class="ex">설명을 쓰시오</p>
+                    <p class="type">aaaa</p>
+                  </div>
+                  <div class="right_box">
+                    <div class="r-poab">
+                      <i class="fa-solid fa-arrow-right"></i>
                     </div>
-                    <div class="right_box">
-                      <div class="r-poab"
-                        ><i class="fa-solid fa-arrow-right"></i
-                      ></div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
+                  </div>
+                </a>
+              </li>
+              <li>
+                  <a href="#">
                     <div class="list_summary">
                       <p class="list_title">NONFICTION</p>
-                      <p class="ex">sticky를 활용한 <br>
-                        논픽션 리뉴얼 작업</p>
-                      <p class="type">aaaa</p>
-                    </div>
-                    <div class="right_box">
-                      <div class="r-poab"
-                        ><i class="fa-solid fa-arrow-right"></i
-                      ></div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="list_summary">
-                      <p class="list_title">청와대</p>
                       <p class="ex">
-                        다양한 swiper를 활용한<br>
-                        청화대 홈페이지 작업
+                        sticky를 활용한 <br />
+                        논픽션 리뉴얼 작업
                       </p>
                       <p class="type">aaaa</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="list_summary">
+                    <p class="list_title">청와대</p>
+                    <p class="ex">
+                      다양한 swiper를 활용한<br />
+                      청화대 홈페이지 작업
+                    </p>
+                    <p class="type">aaaa</p>
+                  </div>
+                  <div class="right_box">
+                    <div class="r-poab">
+                      <i class="fa-solid fa-arrow-right"></i>2
                     </div>
-                    <div class="right_box">
-                      <div class="r-poab"
-                        ><i class="fa-solid fa-arrow-right"></i
-                      ></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="list_summary">
+                    <p class="list_title">NewJeans</p>
+                    <p class="ex">
+                      grid를 활용한 뉴진스 공식<br />
+                      홈페이지 리뉴얼 작업
+                    </p>
+                    <p class="type">aaaa</p>
+                  </div>
+                  <div class="right_box">
+                    <div class="r-poab">
+                      <i class="fa-solid fa-arrow-right"></i>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <div class="list_summary">
-                      <p class="list_title">NewJeans</p>
-                      <p class="ex">
-                        grid를 활용한 뉴진스 공식<br> 홈페이지 리뉴얼 작업
-                      </p>
-                      <p class="type">aaaa</p>
-                    </div>
-                    <div class="right_box">
-                      <div class="r-poab"
-                        ><i class="fa-solid fa-arrow-right"></i
-                      ></div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div class="list_box2">
             <ul>
               <li>
-                <a href="" target="_blank">
+                <a href="#" target="_blank">
                   <p class="date">날짜</p>
                   <p class="list_title">죠스 떡볶이</p>
                   <p class="ex">설명을 쓰시오</p>
                   <div class="right_box">
-                    <div class="r-poab"
-                      ><i class="fa-solid fa-arrow-right"></i
-                    ></div>
+                    <div class="r-poab">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="" target="_blank">
+                <a href="#" target="_blank">
                   <p class="date">aaaa</p>
                   <p class="list_title">칠성사이다</p>
                   <p class="ex">설명을 쓰시오</p>
                   <div class="right_box">
-                    <div class="r-poab"
-                      ><i class="fa-solid fa-arrow-right"></i
-                    ></div>
+                    <div class="r-poab">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="" target="_blank">
+                <a href="#" target="_blank">
                   <p class="date">aaaa</p>
                   <p class="list_title">인테리어</p>
                   <p class="ex">설명을 쓰시오</p>
                   <div class="right_box">
-                    <div class="r-poab"
-                      ><i class="fa-solid fa-arrow-right"></i
-                    ></div>
+                    <div class="r-poab">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="" target="_blank">
+                <a href="#" target="_blank">
                   <p class="date">aaaa</p>
                   <p class="list_title">인테리어</p>
                   <p class="ex">설명을 쓰시오</p>
@@ -373,7 +459,7 @@ git
                 </a>
               </li>
               <li>
-                <a href="" target="_blank">
+                <a href="#" target="_blank">
                   <p class="date">aaaa</p>
                   <p class="list_title">yes 24</p>
                   <p class="ex">설명을 쓰시오</p>
@@ -388,11 +474,32 @@ git
       </section>
     </main>
 
+    <div class="up_btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
     <!-- -------------------------------------------------------------------------------------------- -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <!-- <script src="./src/js/project.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.umd.min.js
+    "></script>
+    
+    <script>
+      const lenis = new Lenis();
 
+      // Use requestAnimationFrame to continuously update the scroll
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+    
   </body>
 </html>
