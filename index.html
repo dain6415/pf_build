@@ -16,7 +16,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
     <!-- Demo styles -->
@@ -25,36 +29,24 @@
       html,
       body {
         position: relative;
-        height: auto;
-      }
-      body {
-        background: var(--mainBg-color);
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-      .swiper {
-        width: 100%;
         height: 100%;
       }
-      .swiper-slide {
-        border-bottom: 1px solid #000;
-        /* height: calc((100% - 30px) / 2) !important; */
-      }
+      /* ::-webkit-scrollbar {
+        display: none;
+      } */
     </style>
-    <script type="module" crossorigin src="./assets/index-CYhhYpRP.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DyYHEC-p.css">
+    <script type="module" crossorigin src="./assets/index-B7JTUDXV.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CyNNafP2.css">
   </head>
 
   <body>
-    <!-- <div id="custom_cursor"><span></span></div> -->
-    <div class="line">
-      <div class="h-line h-line1"></div>
-      <div class="h-line h-line2"></div>
-      <div class="h-line h-line3"></div>
-      <div class="h-line h-line4"></div>
-      <div class="h-line h-line5"></div>
-      <!-- <div class="h-line h-line6"></div> -->
+    <div id="custom_cursor"></div>
+    <div class="body_line">
+      <div class="h-line left"></div>
+      <div class="h-line left-middle"></div>
+      <div class="h-line center"></div>
+      <div class="h-line right-middle"></div>
+      <div class="h-line right"></div>
     </div>
 
     <!-- ************************ -->
@@ -69,7 +61,7 @@
             </div>
             <nav class="header__nav" role="navigation" aria-label="메인메뉴">
               <ul>
-                <li ><a href="#intro" class="on">home</a></li>
+                <li><a href="#intro" class="on">home</a></li>
                 <li><a href="#project">project</a></li>
                 <li><a href="#work">work</a></li>
                 <!-- <li><a href="#uxui">ux/ui</a></li> -->
@@ -96,69 +88,114 @@
         </div> -->
 
         <div class="sect_inner">
+          <div class="blend">
+            <img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt="" />
+          </div>
           <div class="stickers">
             <div class="sticker black1">
-              <div class="img_blend">
-                <img src="./assets/texture2-obHKeZ9f.jpeg" alt="">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
               </div>
-              <img src="./assets/black-C7QOggTt.svg" alt="인트로 스티커 이미지" />
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                </div>
+                <img src="./assets/black-C7QOggTt.svg" alt="인트로 스티커 이미지" />
+              </div>
             </div>
             <div class="sticker long1">
-              <div class="img_blend">
-                <img src="./assets/texture2-obHKeZ9f.jpeg" alt="">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
               </div>
-              <img
-                src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
-                alt="인트로 스티커 이미지"
-              />
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                </div>
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                  alt="인트로 스티커 이미지"
+                />
+              </div>
             </div>
             <div class="sticker blue1">
-              <div class="img_blend">
-                <img src="./assets/texture2-obHKeZ9f.jpeg" alt="">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
               </div>
-              <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                </div>
+                <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+              </div>
             </div>
             <div class="sticker black2">
-              <div class="img_blend">
-                <img src="./assets/texture2-obHKeZ9f.jpeg" alt="">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
               </div>
-              <img src="./assets/black-C7QOggTt.svg" alt="인트로 스티커 이미지" />
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                </div>
+                <img src="./assets/black-C7QOggTt.svg" alt="인트로 스티커 이미지" />
+              </div>
             </div>
             <div class="sticker blue2">
-              <div class="img_blend">
-                <img src="./assets/texture2-obHKeZ9f.jpeg" alt="">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
               </div>
-              <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt="" />
+                </div>
+                <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+              </div>
             </div>
             <div class="sticker long2">
-              <div class="img_blend">
-                <img src="./assets/texture2-obHKeZ9f.jpeg" alt="">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
               </div>
-              <img
-                src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
-                alt="인트로 스티커 이미지"
-              />
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt="" />
+                </div>
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                  alt="인트로 스티커 이미지"
+                />
+              </div>
             </div>
             <div class="sticker blue3">
-              <div class="img_blend">
-                <img src="./assets/texture2-obHKeZ9f.jpeg" alt="">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
               </div>
-              <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt="" />
+                </div>
+                <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+              </div>
             </div>
-            <!-- <div class="sticker long4">
-              <img
-                src="./src/img/SVG/blue_long.svg"
-                alt="인트로 스티커 이미지"
-              />
-            </div> -->
             <div class="sticker long3">
-              <div class="img_blend">
-                <img src="./assets/texture2-obHKeZ9f.jpeg" alt="">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
               </div>
-              <img
-                src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
-                alt="인트로 스티커 이미지"
-              />
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                </div>
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                  alt="인트로 스티커 이미지"
+                />
+              </div>
             </div>
           </div>
           <div class="intro_title">
@@ -171,10 +208,8 @@
             </svg> -->
 
             <p class="portfolio">UI/UX portfolio</p>
-
           </div>
         </div>
-        <div class="blend"><img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt=""></div>
       </section>
 
       <!-- project -->
@@ -187,380 +222,137 @@
           </div>
 
           <!-- Swiper -->
-          <div class="swiper_box">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="number"><p>1</p></div>
-                      <div class="txt">
-                        <p class="title">identity</p>
-                        <p>
-                          "ddfsdfee<br />
-                          sdfsec idsufoe sdk j
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="keyword">
-                      <p>IDENTITY</p>
-                      <p>LOGO</p>
-                      <p>기획</p>
-                      <p>개인프로젝트</p>
-                    </div> -->
-                    <div class="sticker">
-                      <!-- <img src="./src/img/SVG/identity.svg" alt="아이덴티티 이미지" /> -->
-                    </div>
-                  </a>
+          <div class="sect__wrap">
+            <article class="sect__item s1">
+              <div class="num">
+                <p>S&nbsp;/&nbsp;001</p>
+              </div>
+              <div class="info">
+                <h2 class="title">NewJeans</h2>
+                <div class="txt">
+                  <p>
+                    뉴진스의 &lt;Supernatural&gt; 앨범 발매를 기념하여 공식
+                    홈페이지를 새롭게 리뉴얼하였습니다. 앨범 음악 및 뮤직비디오
+                    영상과 <span>무라카미 다카시, 후지와라 히로시</span>와의
+                    콜라보 굿즈까지 공식 홈페이지에서 볼 수 있도록 진행하였습니다.
+                  </p>
                 </div>
-                <div class="swiper-slide slide2">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="number"><p>2</p></div>
-                      <div class="txt">
-                        <p class="title">identity</p>
-                        <p>
-                          "나는 누구인가?"<br />
-                          <span>나의 특징</span>을 모아 고양이에 비유한<br />아이덴티티
-                          디자인
-                        </p>
-                      </div>
-                    </div>
-                    <div class="sticker">
-                      <img
-                        src="./assets/iden-B8nbq-B-.svg"
-                        alt="아이덴티티 이미지"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <!-- <div class="swiper-slide slide2">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="number"><p>2</p></div>
-                      <div class="txt">
-                        <p class="title">NewJeans</p>
-                        <p>
-                          <span>그리드</span>를 활용한<br />
-                          뉴진스의 &lt;Supernatural&gt; 앨범 발매 기념<br />
-                          공식 <span class="delay">홈페이지 리뉴얼</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="keyword">
-                      <p>WEB</p>
-                      <p>renewal</p>
-                      <p>개인프로젝트</p>
-                    </div>
-                    <div class="sticker">
-                      <img
-                        src="./src/img/SVG/nj4.svg"
-                        alt="뉴진스의 슈퍼내추럴 로고"
-                      />
-                    </div>
-                  </a>
-                </div> -->
-                <div class="swiper-slide slide3">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="number"><p>3</p></div>
-                      <div class="txt">
-                        <p class="title">서울시립미술관 SeMA</p>
-                        <p>서울시립미술관 홈페이지 리뉴얼 디자인</p>
-                      </div>
-                    </div>
-                    <!-- <div class="keyword">
-                      <p>WEB</p>
-                      <p>renewal</p>
-                      <p>기획</p>
-                      <p>개인프로젝트</p>
-                    </div> -->
-                    <div class="sticker">
-                      <img
-                        src="./assets/sema_logo_%EC%9B%90%EB%9E%98-XQtO-pZ6.svg"
-                        alt="서울시립미술관 로고"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide slide4">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="number"><p>4</p></div>
-                      <div class="txt">
-                        <p class="title">selmin</p>
-                        <p>
-                          복용 알림과 기록을 통해<br />
-                          <span>건강 관리를 간편하게</span> 관리하는<br />
-                          효율적인 <span>복약 관리 앱</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="keyword">
-                      <p>APP</p>
-                      <p>기획</p>
-                      <p>개인프로젝트</p>
-                    </div>
-                    <div class="sticker">
-                      <img src="data:image/svg+xml,%3csvg%20width='60'%20height='60'%20viewBox='0%200%2060%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_687_2266)'%3e%3crect%20width='60'%20height='60'%20fill='white'/%3e%3crect%20width='60'%20height='60'%20fill='%23FF671A'/%3e%3cpath%20d='M46.9521%2031.1605C46.8835%2032.0645%2046.7407%2032.9519%2046.5349%2033.8113C44.8093%2040.9435%2038.4436%2046.4127%2030.7866%2046.954C27.0553%2047.2163%2023.5525%2046.3401%2020.5982%2044.6436C19.3125%2043.9013%2019.0897%2042.1713%2020.1468%2041.1389L40.9979%2020.7691C42.055%2019.7366%2043.8264%2019.9599%2044.5864%2021.2155C44.9693%2021.8517%2045.3121%2022.5103%2045.6093%2023.1967C46.6664%2025.6132%2047.1635%2028.3254%2046.9521%2031.1605Z'%20fill='white'/%3e%3cpath%20d='M13.0478%2028.8393C13.1164%2027.9352%2013.2592%2027.0479%2013.4649%2026.1884C15.1906%2019.0562%2021.5562%2013.5871%2029.2133%2013.0457C32.9446%2012.7834%2036.4474%2013.6596%2039.4017%2015.3562C40.6874%2016.0984%2040.9102%2017.8285%2039.8531%2018.8609L19.002%2039.2307C17.9449%2040.2631%2016.1735%2040.0399%2015.4135%2038.7842C15.0306%2038.148%2014.6878%2037.4895%2014.3906%2036.8031C13.3335%2034.3866%2012.8364%2031.6743%2013.0478%2028.8393Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_687_2266'%3e%3crect%20width='60'%20height='60'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="앱 이미지" />
-                    </div>
-                  </a>
+                <a href="#" class="view_btn mouse_event"
+                  >SITE VIEW <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="s_img">
+                <div class="img_bg">
+                  <img src="./assets/nj-CPQNzG-2.svg" alt="" />
                 </div>
               </div>
-            </div>
-            <div class="swiper_btn">
-              <div class="btn_box">
-                <div class="swp_btn swiper-button-prev"></div>
+            </article>
+            <article class="sect__item s2">
+              <div class="num">
+                <p>S&nbsp;/&nbsp;002</p>
               </div>
-              <div class="btn_box">
-                <div class="swp_btn swiper-button-next"></div>
+              <div class="info">
+                <h2 class="title">서울시립미술관</h2>
+                <div class="txt">
+                  <p>
+                    JAVA script를 이용한 서울시립미술관 홈페이지를 리뉴얼
+                    사이트이며 .
+                  </p>
+                </div>
+                <a href="#" class="view_btn mouse_event">SITE VIEW <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class="plan  mouse_event m-blend">기획서</a>
               </div>
-            </div>
+              <div class="s_img">
+                <div class="img_bg">
+                  <img src="./assets/logo-DJq_Spa8.svg" alt="" />
+                </div>
+              </div>
+            </article>
+            <article class="sect__item s3">
+              <div class="num">
+                <p>S&nbsp;/&nbsp;003</p>
+              </div>
+              <div class="info">
+                <h2 class="title">selmine</h2>
+                <div class="txt">
+                  <p>
+                    사용자가 자신의 건강과 약 복용을 주도적으로 관리할 수 있도록 도와주는 모바일 애플리케이션으로 피그마로 작업하였습니다.
+                  </p>
+                </div>
+                <a href="#" class="view_btn mouse_event">Figma VIEW <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class="plan  mouse_event mouse_event">기획서</a>
+              </div>
+              <div class="s_img">
+                <div class="img_bg">
+                  <img src="data:image/svg+xml,%3csvg%20width='416'%20height='416'%20viewBox='0%200%20416%20416'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_933_3336)'%3e%3crect%20width='416'%20height='416'%20rx='70'%20fill='%23FF671A'/%3e%3cpath%20d='M325.234%20216.025C324.76%20222.278%20323.772%20228.414%20322.349%20234.358C310.415%20283.681%20266.393%20321.504%20213.439%20325.247C187.634%20327.061%20163.41%20321.002%20142.979%20309.269C134.088%20304.136%20132.546%20292.172%20139.857%20285.032L284.057%20144.163C291.368%20137.023%20303.618%20138.567%20308.874%20147.25C311.522%20151.65%20313.893%20156.204%20315.948%20160.951C323.258%20177.663%20326.696%20196.42%20325.234%20216.025Z'%20fill='white'/%3e%3cpath%20d='M90.7656%20199.975C91.2398%20193.722%2092.2277%20187.586%2093.6504%20181.642C105.585%20132.319%20149.607%2094.4963%20202.561%2090.7526C228.366%2088.9387%20252.59%2094.998%20273.021%20106.731C281.912%20111.864%20283.453%20123.828%20276.143%20130.968L131.943%20271.837C124.632%20278.977%20112.382%20277.433%20107.126%20268.75C104.478%20264.35%20102.107%20259.796%20100.052%20255.049C92.7414%20238.337%2089.3034%20219.58%2090.7656%20199.975Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_933_3336'%3e%3crect%20width='416'%20height='416'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="" />
+                </div>
+              </div>
+            </article>
+            <article class="sect__item s4">
+              <div class="num">
+                <p>S&nbsp;/&nbsp;004</p>
+              </div>
+              <div class="info">
+                <h2 class="title">selmine</h2>
+                <div class="txt">
+                  <p>
+                    뉴진스의 &lt;Supernatural&gt; 앨범 발매를 기념하여 공식
+                    홈페이지를 새롭게 리뉴얼하였습니다. 앨범 음악 및 뮤직비디오
+                    영상과 <span>무라카미 다카시, 후지와라 히로시</span>와의
+                    콜라보 굿즈까지 공식 홈페이지에서 만나 보실 수 있도록
+                    진행하였습니다.
+                  </p>
+                </div>
+                <a href="#" class="view_btn mouse_event"
+                  >Figma VIEW <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="s_img">
+                <div class="img_bg">
+                  <img src="./assets/sema_logo_%EC%9B%90%EB%9E%98-XQtO-pZ6.svg" alt="" />
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- work -->
-      <section id="work" data-bg="#000">
-        <div class="sect_inner">
-          <div class="work_top_list">
-            <div class="sect_title">
-              <div class="po_ab">
-                <p class="sect_t">work.</p>
-                <p class="txt">지금의 제가 되기 위한 여정입니다.</p>
-              </div>
-            </div>
-          </div>
-            <!-- list -->
-          <div class="list_box">
-            <ul>
-              <li>
-                <a href="">
-                  <div class="list_summary">
-                    <p class="list_title">망그러진 곰</p>
-                    <p class="ex">설명을 쓰시오</p>
-                    <p class="type">aaaa</p>
-                  </div>
-                  <div class="right_box">
-                    <div class="r-poab">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                  <a href="#">
-                    <div class="list_summary">
-                      <p class="list_title">NONFICTION</p>
-                      <p class="ex">
-                        sticky를 활용한 <br />
-                        논픽션 리뉴얼 작업
-                      </p>
-                      <p class="type">aaaa</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div class="list_summary">
-                    <p class="list_title">청와대</p>
-                    <p class="ex">
-                      다양한 swiper를 활용한<br />
-                      청화대 홈페이지 작업
-                    </p>
-                    <p class="type">aaaa</p>
-                  </div>
-                  <div class="right_box">
-                    <div class="r-poab">
-                      <i class="fa-solid fa-arrow-right"></i>2
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div class="list_summary">
-                    <p class="list_title">NewJeans</p>
-                    <p class="ex">
-                      grid를 활용한 뉴진스 공식<br />
-                      홈페이지 리뉴얼 작업
-                    </p>
-                    <p class="type">aaaa</p>
-                  </div>
-                  <div class="right_box">
-                    <div class="r-poab">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
 
-          <div class="list_box2">
-            <ul>
-              <li>
-                <a href="#" target="_blank">
-                  <p class="date">날짜</p>
-                  <p class="list_title">죠스 떡볶이</p>
-                  <p class="ex">설명을 쓰시오</p>
-                  <div class="right_box">
-                    <div class="r-poab">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <p class="date">aaaa</p>
-                  <p class="list_title">칠성사이다</p>
-                  <p class="ex">설명을 쓰시오</p>
-                  <div class="right_box">
-                    <div class="r-poab">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <p class="date">aaaa</p>
-                  <p class="list_title">인테리어</p>
-                  <p class="ex">설명을</p>
-                  <div class="right_box">
-                    <div class="r-poab">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <p class="date">aaaa</p>
-                  <p class="list_title">인테리어</p>
-                  <p class="ex">설명을 쓰시오</p>
-                  <div class="right_box">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <p class="date">aaaa</p>
-                  <p class="list_title">yes 24</p>
-                  <p class="ex">설명을 쓰시오</p>
-                  <div class="right_box">
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-                </a>
-              </li>
-            </ul>
+      <!-- about -->
+      <section id="about" data-bg="#000">
+        <div class="sect_inner">
+          <div class="sect_title">
+            <div class="po_ab">
+              <p>project.</p>
+            </div>
           </div>
         </div>
       </section>
-
-            <!-- about -->
-            <section id="about" data-bg="#f5f5f5">
-              <div class="sect_inner">
-                <div class="sect_title">
-                  <div class="po_ab">
-                    <!-- <p>about</p> -->
-                    <p>THANK U</p>
-                  </div>
-                <div class="about__me">
-                  <div class="myimg">
-      
-                  </div>
-                  <!-- <div class="txt">
-                    <ul>
-                      <li>
-                        <p class="keyword">완성에 대한 디테일</p>
-                        <p>
-                          어떤 일이든 완성은 디테일에서 결정된다고 생각합니다. 저는 작은 디테일 하나라도 놓치지 않으려는 태도를 중요하게 여기며, 이를 통해 작업의 완성도를 높이기 위해 항상 노력합니다. 완벽주의라는 단어가 어울릴 정도는 아니지만,
-                      <li>
-                        <p class="keyword">
-                          과정에서의 성취감이 저를 앞으로 나아가게 합니다
-                        </p>
-                        <p>
-                          저는 디자인을 처음부터 좋아했던 건 아니었어요. 하지만 어느새, 하나의 작업을 끝내고 결과물을 마주했을 때 느끼는 성취감이 제게 큰 원동력이 되고 있다는 걸 깨달았죠. 완벽하지 않아도, 한 발 한
-                          발 꾸준히 나아가는 과정 속에서 얻는 보람이 지금의 저를 만들어 주었습니다.
-                        </p>
-                      </li>
-                    </ul>
-                  </div> -->
-                
-                  <div class="information">
-                    <p>ekdlscjs4@naver.com</p>
-                    <p>+82 10 8541 6415</p>
-                  </div>
-                
-                </div>
-                </div>
-      
-                <!-- 흘러가는 나의 전 작업들 -->
-                <!-- <div class="flow">
-                  <div class="splide" aria-label="Splide Basic HTML Example"> 
-                    <div class="splide__track">
-                      <ul class="splide__list">
-                        <li class="splide__slide">
-                          <a href="#" data-fancybox="gallery">
-                            <img src="./src/img/111222.png" alt="전 작업물1" /></a>
-                        </li>
-                        <li class="splide__slide">
-                          <a href="./src/img/111222.png" data-fancybox="gallery">
-                            <img src="./src/img/111222.png" alt="전 작업물2" /></a>
-                        </li>
-                        <li class="splide__slide">
-                          <a href="./src/img/111222.png" data-fancybox="gallery">
-                            <img src="./src/img/111222.png" alt="전 작업물3" /></a>
-                        </li>
-                        <li class="splide__slide">
-                          <a href="./src/img/111222.png" data-fancybox="gallery">
-                            <img src="./src/img/111222.png" alt="전 작업물4" /></a>
-                        </li>
-                        <li class="splide__slide">
-                          <a href="./src/img/111222.png" data-fancybox="gallery">
-                            <img src="./src/img/111222.png" alt="전 작업물5" /></a>
-                        </li>
-                        <li class="splide__slide">
-                          <a href="./src/img/111222.png">
-                            <img src="./src/img/111222.png" alt="전 작업물6" /></a>
-                        </li>
-                        <li class="splide__slide">
-                          <a href="./src/img/111222.png" data-fancybox="gallery">
-                            <img src="./src/img/111222.png" alt="전 작업물7" /></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-            </section>
-
     </main>
 
-    <div class="up_btn">
+    <!-- <div class="up_btn">
       <i class="fa-solid fa-arrow-up"></i>
-    </div>
+    </div> -->
+    <!-- <div class="mCustomScrollbar content" data-mcs-theme="dark">
+    </div> -->
+
     <!-- -------------------------------------------------------------------------------------------- -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- gsap -->
-     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
     <!-- ------------------------ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-    <script src="
-    https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.umd.min.js
-    "></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
-    
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
+
+    <script></script>
   </body>
 </html>
