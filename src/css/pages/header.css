@@ -1,0 +1,121 @@
+#header {
+  width: 100%;
+  padding: 20px 40px;
+  height: 80px;
+  bottom: 0;
+  position: absolute;
+  z-index: 1000;
+}
+#header.fixed {
+  position: fixed;
+  top: 0;
+}
+#header.borderNo {
+  border-bottom: 0;
+}
+#header.scrolled {
+  background-color: #111;
+  color: #ccc;
+}
+#header .header__inner {
+  height: 100%;
+  display: flex;
+}
+#header .header__inner .header__logo {
+  font-family: "GmarketSansMedium";
+}
+#header .header__inner nav ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: var(--black600);
+}
+#header .header__inner nav ul li a {
+  position: relative;
+  transform-origin: right;
+}
+#header .header__inner nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--black700);
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+#header .header__inner nav ul li a.on {
+  color: var(--main-color);
+  font-weight: 700;
+}
+#header .header__inner nav ul li a.on::after {
+  width: 0;
+}
+#header .header__inner nav ul li a:hover:not(.on)::after {
+  width: 100%;
+  left: 0;
+}
+#header .header__inner .header__nav_mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  #header {
+    width: auto;
+    height: 60px;
+    padding: 10px;
+    background: transparent;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  #header.fixed {
+    top: 0px;
+  }
+  #header .header__inner {
+    border-radius: 10px;
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--mainBg-color);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border: 1px solid var(--black200_txt);
+  }
+  #header .header__inner .header__logo {
+    display: none;
+  }
+  #header .header__inner .header__nav {
+    display: none;
+  }
+  #header .header__inner .header__nav_mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 701px) {
+  #header {
+    background: var(--mainBg-color);
+  }
+  #header .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .header__inner .header__logo {
+    font-size: 1.5rem;
+  }
+  #header .header__inner .header__nav_mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

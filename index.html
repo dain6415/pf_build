@@ -2,11 +2,24 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-    <title>dainh88</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hongda88.netlify.app/" />
+    <meta property="og:title" content="Dain's Portfolio" />
+    <meta name="keywords" content="portfolio, publisher" />
+    <!-- <meta property="og:image" content="https://drive.google.com/uc?id=1_mI7uZzbYDR-7ga_3gXkjWedw01dS0TU.png"> -->
+    <meta
+      property="og:image"
+      content="https://drive.google.com/file/d/1_mI7uZzbYDR-7ga_3gXkjWedw01dS0TU/view?usp=drive_link.png"
+    />
+    <!-- <meta property="og:description" content="Description Here"> -->
+
+    <meta property="og:site_name" content="Site Name" />
+    <title>Dain's Portfolio</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
+
     <script
       src="https://kit.fontawesome.com/2e471157d2.js"
       crossorigin="anonymous"
@@ -21,7 +34,7 @@
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Demo styles -->
     <style>
@@ -29,37 +42,31 @@
       html,
       body {
         position: relative;
-        height: auto;
+        height: 100vh;
       }
+
       body {
         background: var(--mainBg-color);
         color: #000;
         margin: 0;
         padding: 0;
       }
+
       .swiper {
         width: 100%;
         height: 100%;
       }
+
       .swiper-slide {
         border-bottom: 1px solid #000;
         /* height: calc((100% - 30px) / 2) !important; */
       }
     </style>
-    <script type="module" crossorigin src="./assets/index-B3VoPAEq.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-GzudaL6t.css">
   </head>
 
   <body>
+    <!-- cursor -->
     <div id="custom_cursor"></div>
-    <div class="body_line">
-      <div class="h-line left"></div>
-      <div class="h-line left-middle"></div>
-      <div class="h-line center"></div>
-      <div class="h-line right-middle"></div>
-      <div class="h-line right"></div>
-    </div>
-
     <!-- ************************ -->
     <main>
       <!-- intro -->
@@ -68,15 +75,23 @@
         <header id="header" role="banner">
           <div class="header__inner">
             <div class="header__logo">
-              <a href="#">portfolio<em>ux/ui / pulisher</em></a>
+              <a href="#" target="_top"><span>HDAN</span></a>
             </div>
             <nav class="header__nav" role="navigation" aria-label="메인메뉴">
               <ul>
-                <li><a href="#intro" class="on">home</a></li>
-                <li><a href="#project">project</a></li>
-                <li><a href="#work">work</a></li>
+                <li class="">
+                  <a href="#intro" class="on"><span>home</span></a>
+                </li>
+                <li class="">
+                  <a href="#about"><span>about</span></a>
+                </li>
+                <li class="">
+                  <a href="#project"><span>project</span></a>
+                </li>
+                <li class="">
+                  <a href="#work"><span>work</span></a>
+                </li>
                 <!-- <li><a href="#uxui">ux/ui</a></li> -->
-                <li><a href="#about">about</a></li>
               </ul>
             </nav>
             <div
@@ -86,21 +101,14 @@
               aria-expanded="flase"
               role="button"
             >
-              <span></span>
+              <span class="mobile_menuBar"><span>menu</span></span>
             </div>
           </div>
         </header>
-        <!-- <div class="home__down">
-          <svg viewBox="0 0 800 800" width="" height="">
-            <path fill="#fff" d="M657,443c-13-13.1-34.1-13.2-47.1-0.2c-0.1,0.1-0.1,0.1-0.2,0.2L433.3,619.7V100c0-18.4-14.9-33.3-33.3-33.3
-              c-18.4,0-33.3,14.9-33.3,33.3v519.7L190.3,443c-13.1-13.1-34.3-13.1-47.3,0c-13.1,13.1-13.1,34.3,0,47.3l233.3,233.3
-              c13,13.1,34.1,13.2,47.1,0.2c0.1-0.1,0.1-0.1,0.2-0.2L657,490.3c13.1-13,13.2-34.1,0.2-47.1C657.1,443.1,657.1,443.1,657,443z"/>
-            </svg>
-        </div> -->
-
+        <!-- content -->
         <div class="sect_inner">
           <div class="blend">
-            <img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt="" />
+            <img src="./src/img/sticker_texture_bg.jpg" alt="" />
           </div>
           <div class="stickers">
             <div class="sticker black1">
@@ -110,9 +118,12 @@
               </div>
               <div class="sticker_wrap">
                 <div class="img_blend">
-                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
                 </div>
-                <img src="./assets/black-C7QOggTt.svg" alt="인트로 스티커 이미지" />
+                <img src="./src/img/SVG/black.svg" alt="인트로 스티커 이미지" />
               </div>
             </div>
             <div class="sticker long1">
@@ -122,10 +133,13 @@
               </div>
               <div class="sticker_wrap">
                 <div class="img_blend">
-                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
                 </div>
                 <img
-                  src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                  src="./src/img/SVG/blue_long.svg"
                   alt="인트로 스티커 이미지"
                 />
               </div>
@@ -137,9 +151,12 @@
               </div>
               <div class="sticker_wrap">
                 <div class="img_blend">
-                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
                 </div>
-                <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+                <img src="./src/img/SVG/blue2.svg" alt="인트로 스티커 이미지" />
               </div>
             </div>
             <div class="sticker black2">
@@ -149,9 +166,12 @@
               </div>
               <div class="sticker_wrap">
                 <div class="img_blend">
-                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
                 </div>
-                <img src="./assets/black-C7QOggTt.svg" alt="인트로 스티커 이미지" />
+                <img src="./src/img/SVG/black.svg" alt="인트로 스티커 이미지" />
               </div>
             </div>
             <div class="sticker blue2">
@@ -161,9 +181,12 @@
               </div>
               <div class="sticker_wrap">
                 <div class="img_blend">
-                  <img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt="" />
+                  <img
+                    src="./src/img/sticker_texture_bg.jpg"
+                    alt="스티커 블렌드 이미지"
+                  />
                 </div>
-                <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+                <img src="./src/img/SVG/blue2.svg" alt="인트로 스티커 이미지" />
               </div>
             </div>
             <div class="sticker long2">
@@ -173,10 +196,13 @@
               </div>
               <div class="sticker_wrap">
                 <div class="img_blend">
-                  <img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt="" />
+                  <img
+                    src="./src/img/sticker_texture_bg.jpg"
+                    alt="스티커 블렌드 이미지"
+                  />
                 </div>
                 <img
-                  src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                  src="./src/img/SVG/blue_long.svg"
                   alt="인트로 스티커 이미지"
                 />
               </div>
@@ -188,9 +214,12 @@
               </div>
               <div class="sticker_wrap">
                 <div class="img_blend">
-                  <img src="./assets/sticker_texture_bg-C93OSTAs.jpg" alt="" />
+                  <img
+                    src="./src/img/sticker_texture_bg.jpg"
+                    alt="스티커 블렌드 이미지"
+                  />
                 </div>
-                <img src="./assets/blue2-DrUAOVve.svg" alt="인트로 스티커 이미지" />
+                <img src="./src/img/SVG/blue2.svg" alt="인트로 스티커 이미지" />
               </div>
             </div>
             <div class="sticker long3">
@@ -200,10 +229,13 @@
               </div>
               <div class="sticker_wrap">
                 <div class="img_blend">
-                  <img src="./assets/texture2-obHKeZ9f.jpeg" alt="" />
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
                 </div>
                 <img
-                  src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTEgMTc4LjM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzFmNjdmODt9LmNscy0ye2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy0ze2ZvbnQtc2l6ZToyOC4xOXB4O2ZvbnQtZmFtaWx5OlByZXRlbmRhcmQtQm9sZCwgUHJldGVuZGFyZDtmb250LXdlaWdodDo3MDA7fS5jbHMtNHtsZXR0ZXItc3BhY2luZzotMC4wNGVtO30uY2xzLTV7bGV0dGVyLXNwYWNpbmc6LTAuMDRlbTt9LmNscy02e2xldHRlci1zcGFjaW5nOi0wLjAzZW07fS5jbHMtN3tsZXR0ZXItc3BhY2luZzotMC4wNGVtO308L3N0eWxlPjwvZGVmcz48dGl0bGU+QXJ0Ym9hcmQgMjYgY29weSA4PC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzcuMTEiIGhlaWdodD0iMTc4LjM1IiByeD0iMzUuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE2MC43MiIgeT0iLTEzOC4wNCIgd2lkdGg9IjE1NS42NyIgaGVpZ2h0PSI0NTQuNDMiIHJ4PSIyNC4yMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzI3LjczIC0xNDkuMzgpIHJvdGF0ZSg5MCkiLz48dGV4dCBjbGFzcz0iY2xzLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMy4wOSA2OC4xNikiPkhPTUUgSVMgPHRzcGFuIHg9IjAiIHk9IjMwLjA3Ij5NWSA8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjUwLjk4IiB5PSIzMC4wNyI+VzwvdHNwYW4+PHRzcGFuIHg9Ijc4LjAzIiB5PSIzMC4wNyI+T1JMPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIxMzIuNDYiIHk9IjMwLjA3Ij5EPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy02IiB4PSIxNTAuOTciIHk9IjMwLjA3Ij4sPC90c3Bhbj48dHNwYW4geD0iMCIgeT0iNjAuMTQiPkkmYXBvcztNIEEgSE9NRUJPPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxOTMuMzQiIHk9IjYwLjE0Ij5EPC90c3Bhbj48dHNwYW4geD0iMjExLjg5IiB5PSI2MC4xNCI+WTwvdHNwYW4+PC90ZXh0Pjxwb2x5Z29uIHBvaW50cz0iMTcxLjk3IDE0Ny41MiAxMTEuNjQgMTQ3LjUyIDUxLjMxIDE0Ny41MiA1MS4zMSAxMjMuMjIgNTEuMzEgNjIuODkgMTExLjY0IDMwLjgzIDE3MS45NyA2Mi44OSAxNzEuOTcgMTIzLjIyIDE3MS45NyAxNDcuNTIiLz48L3N2Zz4="
+                  src="./src/img/SVG/blue_long.svg"
                   alt="인트로 스티커 이미지"
                 />
               </div>
@@ -223,140 +255,138 @@
         </div>
       </section>
 
+      <nav class="header__mobile" role="navigation" aria-label="메인메뉴">
+        <div class="inner">
+          <div class="header__logo_mobile">
+            <a href="https://hongda88.netlify.app/" target="_self"
+              ><span>Dain's Portfolio</span></a
+            >
+          </div>
+          <ul>
+            <li class="">
+              <a href="#intro" class="on"><span>home</span></a>
+            </li>
+            <li class="">
+              <a href="#about"><span>about</span></a>
+            </li>
+            <li class="">
+              <a href="#project"><span>project</span></a>
+            </li>
+            <li class="">
+              <a href="#work"><span>work</span></a>
+            </li>
+            <!-- <li><a href="#uxui">ux/ui</a></li> -->
+          </ul>
+          <div class="close">
+            <span class="close_icon"></span>
+            <div class="close_bg_blend"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__mobile_filter"></div>
+
+      <!-- main ontents -->
+      <!-- about -->
+      <section id="about" data-bg="#000">
+        <div class="sect_inner">
+          <div class="sect_title">
+            <p class="po_ab">about me.</p>
+          </div>
+          <div class="info">
+            <p class="keyword">보다 나은 결과를 추구합니다</p>
+            <p class="txt txt1">
+              어디서든 쉽게 볼 수 있지만, 그 자리에서도 자신만의 색을 지닌
+              스티커처럼, 변화에 유연하게 적응하면서도 자신만의 개성과 역량을
+              온전히 발휘할 수 있는 퍼블리셔가 되고 싶습니다.
+            </p>
+            <p class="txt txt2">
+              빠르게 변화하는 웹 환경 속에서 트렌드를 읽고 적극적으로 배우며
+              적응하는 동시에, 디자인을 전공한 강점을 살려 단순한 구현을 넘어
+              사용자 경험을 고려한 웹을 만들어 나가겠습니다.<br />
+              개발과 디자인의 균형을 맞추며, 더욱 완성도 높은 결과물을 만들어
+              내는 것이 저의 목표입니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- project -->
       <section id="project" data-bg="#000">
         <div class="sect_inner">
           <div class="sect_title">
-            <div class="po_ab">
-              <h2>project</h2>
-            </div>
+            <h2 class="po_ab">project.</h2>
           </div>
-
-          <div class="sect__wrap">
-            <article class="sect__item s1">
-              <div class="num">
-                <p>S&nbsp;/&nbsp;001</p>
-              </div>
-              <div class="info">
-                <h3 class="title">NewJeans</h3>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  href="https://dain6415.github.io/project/p_NewJeans"
+                  target="_blank"
+                  role="button"
+                  class="bg-img"
+                >
+                  <img src="./src/img/work/new2.jpg" alt="뉴진스 배경 이미지" />
+                </a>
                 <div class="txt">
-                  <p>
-                    뉴진스의 &lt;Supernatural&gt; 앨범 발매를 기념하여 공식
-                    홈페이지를 새롭게 리뉴얼하였습니다. 앨범 음악 및 뮤직비디오
-                    영상과 <span>무라카미 다카시, 후지와라 히로시</span>와의
-                    콜라보 굿즈까지 공식 홈페이지에서 볼 수 있도록
-                    진행하였습니다.
-                  </p>
-                </div>
-                <a href="#" class="view_btn mouse_event"
-                  >SITE VIEW <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </div>
-              <div class="s_img">
-                <div class="img_bg">
-                  <img src="./assets/nj-CPQNzG-2.svg" alt="" />
+                  <h4>
+                    <a
+                      href="https://dain6415.github.io/project/p_NewJeans"
+                      target="_blank"
+                      class="title"
+                      >NewJeans</a
+                    >
+                  </h4>
+                  <p>Grid, iframe을 활용한 뉴진스 홈페이지 리디자인</p>
                 </div>
               </div>
-            </article>
-            <article class="sect__item s2">
-              <div class="num">
-                <p>S&nbsp;/&nbsp;002</p>
-              </div>
-              <div class="info">
-                <h3 class="title">서울시립미술관</h3>
+              <div class="swiper-slide">
+                <a
+                  href="https://dain6415.github.io/project/p_SeMA/index.html"
+                  target="_blank"
+                  role="button"
+                  class="bg-img"
+                >
+                  <img
+                    src="./src/img/work/sema.jpg"
+                    alt="서울시립미술관 배경 이미지"
+                  />
+                </a>
                 <div class="txt">
-                  <p>
-                    JAVA script를 이용한 서울시립미술관 홈페이지를 리뉴얼
-                    사이트이며 해당 프로젝트를 통해 서울시립미술관의 디지털
-                    경험을 개선하고 방문객들이 더 쉽게 정보를 탐색하여 미술관과
-                    소통할 수 잇는 플랫폼을 구축했습니다..
-                  </p>
-                </div>
-                <a href="#" class="view_btn mouse_event"
-                  >SITE VIEW <i class="fa-solid fa-arrow-right"></i
-                ></a>
-                <a href="#" class="plan mouse_event m-blend">기획서</a>
-              </div>
-              <div class="s_img">
-                <div class="img_bg">
-                  <img src="./assets/logo-DJq_Spa8.svg" alt="" />
+                  <h4>
+                    <a
+                      href="https://dain6415.github.io/project/p_SeMA/index.html"
+                      target="_blank"
+                      class="title"
+                      >서울시립미술관</a
+                    >
+                  </h4>
+                  <p>JAVA script를</p>
                 </div>
               </div>
-            </article>
-            <article class="sect__item s3">
-              <div class="num">
-                <p>S&nbsp;/&nbsp;003</p>
-              </div>
-              <div class="info">
-                <h3 class="title">selmine</h3>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.figma.com/proto/qpzNqZsmUHgq9hscTeajLL/selmine?node-id=240-58&p=f&t=BKE1wjlIn9MFkXZB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=240%3A58&show-proto-sidebar=1"
+                  target="_blank"
+                  role="button"
+                  class="bg-img"
+                >
+                  <img src="./src/img/work/selmine.jpg" alt="배경 이미지" />
+                </a>
                 <div class="txt">
-                  <p>
-                    사용자가 자신의 건강과 약 복용을 주도적으로 관리할 수 있도록
-                    도와주는 모바일 애플리케이션으로 피그마로 작업하였습니다.
-                  </p>
-                </div>
-                <a href="#" class="view_btn mouse_event"
-                  >Figma VIEW <i class="fa-solid fa-arrow-right"></i
-                ></a>
-                <a href="#" class="plan mouse_event mouse_event">기획서</a>
-              </div>
-              <div class="s_img">
-                <div class="img_bg">
-                  <img src="data:image/svg+xml,%3csvg%20width='416'%20height='416'%20viewBox='0%200%20416%20416'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_933_3336)'%3e%3crect%20width='416'%20height='416'%20rx='70'%20fill='%23FF671A'/%3e%3cpath%20d='M325.234%20216.025C324.76%20222.278%20323.772%20228.414%20322.349%20234.358C310.415%20283.681%20266.393%20321.504%20213.439%20325.247C187.634%20327.061%20163.41%20321.002%20142.979%20309.269C134.088%20304.136%20132.546%20292.172%20139.857%20285.032L284.057%20144.163C291.368%20137.023%20303.618%20138.567%20308.874%20147.25C311.522%20151.65%20313.893%20156.204%20315.948%20160.951C323.258%20177.663%20326.696%20196.42%20325.234%20216.025Z'%20fill='white'/%3e%3cpath%20d='M90.7656%20199.975C91.2398%20193.722%2092.2277%20187.586%2093.6504%20181.642C105.585%20132.319%20149.607%2094.4963%20202.561%2090.7526C228.366%2088.9387%20252.59%2094.998%20273.021%20106.731C281.912%20111.864%20283.453%20123.828%20276.143%20130.968L131.943%20271.837C124.632%20278.977%20112.382%20277.433%20107.126%20268.75C104.478%20264.35%20102.107%20259.796%20100.052%20255.049C92.7414%20238.337%2089.3034%20219.58%2090.7656%20199.975Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_933_3336'%3e%3crect%20width='416'%20height='416'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="" />
+                  <h4>
+                    <a
+                      href="https://www.figma.com/proto/qpzNqZsmUHgq9hscTeajLL/selmine?node-id=240-58&p=f&t=BKE1wjlIn9MFkXZB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=240%3A58&show-proto-sidebar=1"
+                      target="_blank"
+                      class="title"
+                      >selmine</a
+                    >
+                  </h4>
                 </div>
               </div>
-            </article>
-            <article class="sect__item s4">
-              <div class="num">
-                <p>S&nbsp;/&nbsp;004</p>
-              </div>
-              <div class="info">
-                <h3 class="title">selmine</h3>
-                <div class="txt">
-                  <p>
-                    뉴진스의 &lt;Supernatural&gt; 앨범 발매를 기념하여 공식
-                    홈페이지를 새롭게 리뉴얼하였습니다. 앨범 음악 및 뮤직비디오
-                    영상과 <span>무라카미 다카시, 후지와라 히로시</span>와의
-                    콜라보 굿즈까지 공식 홈페이지에서 만나 보실 수 있도록
-                    진행하였습니다.
-                  </p>
-                </div>
-                <a href="#" class="view_btn mouse_event"
-                  >Figma VIEW <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </div>
-              <div class="s_img">
-                <div class="img_bg">
-                  <img src="./assets/sema_logo_%EC%9B%90%EB%9E%98-XQtO-pZ6.svg" alt="" />
-                </div>
-              </div>
-            </article>
-            <!-- <article class="sect__item " ></article> -->
-            <!-- <article class="sect__item s5">
-              <div class="num">
-                <p>S&nbsp;/&nbsp;004</p>
-              </div>
-              <div class="info">
-                <h3 class="title">selmine</h3>
-                <div class="txt">
-                  <p>
-                    뉴진스의 &lt;Supernatural&gt; 앨범 발매를 기념하여 공식
-                    홈페이지를 새롭게 리뉴얼하였습니다. 앨범 음악 및 뮤직비디오
-                    영상과 <span>무라카미 다카시, 후지와라 히로시</span>와의
-                    콜라보 굿즈까지 공식 홈페이지에서 만나 보실 수 있도록
-                    진행하였습니다.
-                  </p>
-                </div>
-                <a href="#" class="view_btn mouse_event"
-                  >Figma VIEW <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </div>
-              <div class="s_img">
-                <div class="img_bg">
-                  <img src="./src/img/SVG/sema_logo_원래.svg" alt="" />
-                </div>
-              </div>
-            </article> -->
+            </div>
+            <div class="pagination-aria">
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -364,108 +394,369 @@
       <!-- work -->
       <section id="work" data-bg="#000">
         <div class="sect_inner">
-          <div class="work_top_list">
-            <div class="sect_title">
-              <div class="po_ab">
-                <h2 class="sect_t">work.</h2>
-                <!-- <p class="txt">지금의 제가 되기 위한 여정입니다.</p> -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Swiper -->
-          <div class="swiper_box">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="txt">
-                        <p class="title">청와대</p>
-                        <p class="info">
-                          "ddfsdfee<br />
-                          sdfsec idsufoe sdk j
-                        </p>
-                      </div>
-                      <div class="logo_img">
-                        <img src="data:image/svg+xml,%3csvg%20id='Layer_1'%20data-name='Layer%201'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20131.76%2068.71'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23333333;}%3c/style%3e%3c/defs%3e%3ctitle%3eArtboard%202%3c/title%3e%3cpolygon%20class='cls-1'%20points='51.39%2056.51%2051.39%2034.35%2027.87%2029.98%2027.87%2065.35%2051.39%2056.51'/%3e%3cpolygon%20class='cls-1'%20points='80.38%2056.51%2080.38%2034.35%20103.9%2029.98%20103.9%2065.35%2080.38%2056.51'/%3e%3cpath%20class='cls-1'%20d='M128.47,19l-15.28,8.2H18.58L3.29,19l20.48.28,7.37-16A156.27,156.27,0,0,0,65.87,7.28a156.32,156.32,0,0,0,34.75-3.92l7.38,16Z'/%3e%3c/svg%3e" alt="청와대 로고 이미지">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide slide2">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="txt">
-                        <p class="title">nonfiction</p>
-                        <p class="info">
-                          "ddfsdfee<br />
-                          sdfsec idsufoe sdk j
-                        </p>
-                      </div>
-                      <div class="logo_img">
-                        <img src="./assets/non_full_logo-zIaCMOjk.svg" alt="논픽션 로고 이미지" class="rotating-image">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide slide3">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="txt">
-                        <p class="title">ace bed</p>
-                        <p class="info">
-                          "ddfsdfee<br />
-                          sdfsec idsufoe sdk j
-                        </p>
-                      </div>
-                      <div class="logo_img">
-                        <img src="data:image/svg+xml,%3csvg%20id='Layer_1'%20data-name='Layer%201'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20225.85%20160.5'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:none;stroke:%23333;stroke-miterlimit:10;}.cls-2{fill:%23333;}%3c/style%3e%3c/defs%3e%3ctitle%3eArtboard%203%3c/title%3e%3cpath%20class='cls-1'%20d='M72.36,130.23H31.45a103.52,103.52,0,0,0,18.06,11.83H80.89A58.11,58.11,0,0,1,72.36,130.23Z'/%3e%3cpath%20class='cls-1'%20d='M93.47,152a53.72,53.72,0,0,1-8.6-6.14H57.6a138.74,138.74,0,0,0,45.9,10.58A52.81,52.81,0,0,1,93.47,152Z'/%3e%3cpath%20class='cls-1'%20d='M149.12,130.22H114.84v11.83h24.72A52.84,52.84,0,0,0,149.12,130.22Z'/%3e%3cpath%20class='cls-1'%20d='M145,142.05h31.37a101.56,101.56,0,0,0,18.07-11.83H153.5A57.09,57.09,0,0,1,145,142.05Z'/%3e%3cpath%20class='cls-1'%20d='M132.4,152a52.54,52.54,0,0,1-10,4.44,138.8,138.8,0,0,0,45.9-10.57H141A53.51,53.51,0,0,1,132.4,152Z'/%3e%3cpath%20class='cls-1'%20d='M176.27,142.09l-7.93,3.74C171.06,144.67,173.7,143.43,176.27,142.09Z'/%3e%3cpath%20class='cls-1'%20d='M114.84,154.48a50.64,50.64,0,0,0,15.66-5.78c1.55-.9,3-1.85,4.38-2.83h-20Z'/%3e%3cpath%20class='cls-1'%20d='M95.37,148.7A50.64,50.64,0,0,0,111,154.48v-8.61H91C92.36,146.85,93.8,147.8,95.37,148.7Z'/%3e%3cpath%20class='cls-1'%20d='M86.31,142.05H111V130.22H76.74A52.91,52.91,0,0,0,86.31,142.05Z'/%3e%3cpolygon%20class='cls-2'%20points='70.33%2042.36%2048.59%20103.76%2035.16%20103.76%2056.91%2042.36%2070.33%2042.36'/%3e%3cpolygon%20class='cls-2'%20points='92.55%20103.76%2073.5%2049.95%2054.45%20103.76%2092.55%20103.76'/%3e%3cpolygon%20class='cls-2'%20points='183.67%2090.3%20162.7%2090.3%20162.7%2078.67%20182.47%2078.67%20182.47%2066.59%20162.7%2066.59%20162.7%2055.82%20183.67%2055.82%20183.67%2042.36%20148.41%2042.36%20148.41%20103.76%20183.67%20103.76%20183.67%2090.3'/%3e%3cpath%20class='cls-2'%20d='M121.22,104.6a31.7,31.7,0,0,0,21-7.88l-9.62-10.8a17.44,17.44,0,1,1,0-26.45l9.63-10.8a31.9,31.9,0,1,0-21,55.93Z'/%3e%3cpath%20class='cls-1'%20d='M112.93,3.76C53.48,3.76,5.29,38,5.29,80.25c0,17.35,8.12,33.34,21.82,46.16H198.75c13.69-12.83,21.81-28.82,21.81-46.16C220.56,38,172.38,3.76,112.93,3.76Zm8.29,86.38a17.33,17.33,0,0,0,11.35-4.22l9.62,10.8a31.9,31.9,0,1,1,0-48l-9.63,10.8a17.44,17.44,0,1,0-11.35,30.67ZM92.55,103.76H54.45L73.5,50Zm-44,0H35.16l21.75-61.4H70.33ZM183.67,55.82h-21V66.59h19.77V78.67H162.7V90.3h21v13.46H148.41V42.36h35.26Z'/%3e%3c/svg%3e" alt="에이스침대 로고 이미지">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide slide4">
-                  <a href="#" target="_blank">
-                    <div class="summary flex-sb">
-                      <div class="txt">
-                        <p class="title">망그러진 곰</p>
-                        <p class="info">
-                          "ddfsdfee<br />
-                          sdfsec idsufoe sdk j
-                        </p>
-                      </div>
-                      <div class="logo_img">
-                        <img src="" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper_btn">
-              <div class="btn_box">
-                <div class="swp_btn swiper-button-prev"></div>
-              </div>
-              <div class="btn_box">
-                <div class="swp_btn swiper-button-next"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- about -->
-      <section id="about" data-bg="#000">
-        <div class="sect_inner">
           <div class="sect_title">
-            <div class="po_ab">
-              <p>project.</p>
+            <h2 class="po_ab">work.</h2>
+          </div>
+          <div class="filter">
+            <p>Filter</p>
+            <ul>
+              <li class="">
+                <a href="#" data-filter="*" class="on">all</a>
+              </li>
+              <li class="">
+                <a href="#" data-filter=".clone">clone</a>
+              </li>
+              <li class="">
+                <a href="#" data-filter=".responsive">responsive</a>
+              </li>
+              <li class="">
+                <a href="#" data-filter=".create">create</a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-box">
+            <div class="left">
+              <div class="item clone responsive 에이">
+                <div class="title">
+                  <h4>에이스 침대 <span>ACE</span></h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>swiper, tab을 적극 활용한 클론 사이트입니다.</p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>반응형</li>
+                      <li>clone</li>
+                      <li>GSAP</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_ace"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >site view
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone responsive 청">
+                <div class="title">
+                  <h4>청와대</h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      과거 청와대 홈페이지를 jQuery와 JavaScript로 클론 코딩한
+                      프로젝트입니다. Swiper를 활용해 다양한 인터랙션을
+                      구현하였습니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>반응형</li>
+                      <li>clone</li>
+                      <li>GSAP</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_cheongwadae"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item create 인테">
+                <div class="title">
+                  <h4>인테리어<span>interior</span></h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      특정 아티클을 클릭하면, 해당 아티클의 외부 데이터를 Fetch
+                      API를 통해 불러와 .scene 요소에 상세 내용을 보여주는
+                      기능을 구현한 스크립트입니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>Fetch API</li>
+                      <li>create</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_cheongwadae"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone 24">
+                <div class="title">
+                  <h4>
+                    <a target="_blank" role="button"
+                      >예스24<span>yes24</span> (미완)</a
+                    >
+                  </h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>스와이퍼를</p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>반응형</li>
+                      <li>clone</li>
+                      <li>그린삭</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_yes24"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="item clone create responsive 논">
+                <div class="title">
+                  <h4>논픽션<span>Nonfiction</span></h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      논픽션 홈페이지를 리뉴얼한 사이트로 일부 요소는
+                      클론하였습니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>renewal</li>
+                      <li>clone</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_Nonfiction/index.html"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone 애플">
+                <div class="title">
+                  <h4>iPad Pro</h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      GSAP, ScrollTrigger를 활용하여 애플의 아이패드 상세페이지
+                      일부를 클론 코딩한 사이트입니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>apple</li>
+                      <li>clone</li>
+                      <li>GSAP</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_iPadPro"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone 칠성">
+                <div class="title">
+                  <h4>칠성사이다</h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      칠성사이다 메인 페이지를 클론 코딩하여 Swiper를 활용한
+                      슬라이드 효과, 스티키, 패밀리 사이트 접속 연결 등을
+                      구현하였습니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>clone</li>
+                      <li>jquery</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_칠성사이다"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone 우담">
+                <div class="title">
+                  <h4>우담라이팅</h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      sldkfje sidjfs ldkfja;ldk fisjdflksdjfs idjflsdkf
+                      ssjlkdfja;sldkjf sdkj
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>반응형</li>
+                      <li>clone</li>
+                      <li>그린삭</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_woodam"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer id="footer">
+      <div class="sect_inner">
+        <div class="bg">
+          <!-- <p class="thanku">THANK U</p> -->
+        </div>
+        <div class="footer_info">
+          <div class="top">
+            <p class="name">Hong Da In.</p>
+            <div class="txt">
+              <p>
+                함께하는 성장을 추구하며 협력하는 팀원이 되겠습니다. <br />
+                소중한 시간을 내어 주셔서 감사합니다.
+              </p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="my_info f_b_txt">
+              <p class="">
+                <a href="mailto:ekdlscjs4@naver.com">ekdlscjs4@naver.com</a>
+              </p>
+              <p class="">
+                <a href="tel:01085416415">010 8541 6415</a>
+              </p>
+            </div>
+            <div class="copyright f_b_txt">
+              <p><span>&copy;&nbsp;</span>2024 Hong-DaIn All Rights Reserved</p>
+            </div>
+            <div class="link f_b_txt">
+              <div class="">
+                <a href="https://github.com/dain6415/project">
+                  <img
+                    class="git"
+                    src="./src/img/github.png"
+                    alt="github 이미지"
+                  />
+                </a>
+              </div>
+              <div class="">
+                <a href="">
+                  <img
+                    src="./src/img/Notion_app_logo.png"
+                    alt="notion 이미지"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- <div class="time_area">
+              <span>한국시간</span>
+              <time class="time" id="koTime" aria-label="현재 한국 시간"></time>
+            </div> -->
+            <div class="none"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- <div class="up_btn">
       <i class="fa-solid fa-arrow-up"></i>
@@ -474,14 +765,14 @@
     </div> -->
 
     <!-- -------------------------------------------------------------------------------------------- -->
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- gsap -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
     <!-- ------------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/is-inview@0.10.2/dist/is-inview.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -489,6 +780,89 @@
 
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          701: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1300: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+        // loop: true,
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".filter ul li a").forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelectorAll(".filter ul li a").forEach((link) => {
+            //()=>{} or function(){}
+            link.classList.remove("on");
+          });
+          this.classList.add("on");
+
+          var filters = this.getAttribute("data-filter");
+          filtering(filters);
+        });
+      });
+
+      function filtering(filters) {
+        var items = document.querySelectorAll(".item");
+        items.forEach(function (i) {
+          if (filters === "*" || i.matches(filters)) {
+            i.style.display = "block";
+          } else {
+            i.style.display = "none";
+          }
+        });
+      }
+    </script>
+    <script>
+      document.querySelectorAll(".item").forEach(function (i) {
+        i.addEventListener("click", function () {
+          const itemTxt = this.querySelector(".info");
+
+          if (itemTxt) {
+            const txtOpen = itemTxt.style.maxHeight !== "0px"; // 열려있는지 체크
+
+            // 닫혀 있는 상태 = 기본 값
+            document.querySelectorAll(".info").forEach((txt) => {
+              txt.style.maxHeight = "0";
+            });
+            document.querySelectorAll(".item").forEach((i) => {
+              i.classList.remove("on");
+            });
+
+            if (!txtOpen) {
+              itemTxt.style.maxHeight = itemTxt.scrollHeight + "px";
+              this.classList.add("on");
+            } else {
+              // 이미 열려 있다면 닫기
+              itemTxt.style.maxHeight = "0";
+              this.classList.remove("on");
+            }
+          }
+        });
+      });
+    </script>
+    <script type="module" src="./index.js"></script>
+    <script src="./"></script>
     <script></script>
   </body>
 </html>

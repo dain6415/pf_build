@@ -1,0 +1,530 @@
+@mixin po-c {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin flex-c($justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+#intro {
+  position: relative;
+  // padding: 10px;
+  display: none;
+  .home__down {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%; /* 도형 형태를 유지하려면 필요 */
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+      1px 1px 5px rgba(0, 0, 0, 0.1); /* 안쪽 블러 효과 */
+    position: absolute;
+    left: 50%;
+    bottom: 9%;
+    transform: translateX(-50%);
+    z-index: 999;
+    backdrop-filter: blur(10px);
+  }
+  .sect_inner {
+    height: 100%;
+    // background-color: var(--main-color);
+    background-color: var(--black100);
+    text-align: center;
+    // border-radius: 20px;
+    overflow: hidden;
+    .blend {
+      pointer-events: none;
+      mix-blend-mode: color-burn;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        // transform: rotate(180deg);
+      }
+    }
+    .stickers {
+      position: relative;
+      width: 100%;
+      height: 64%;
+      z-index: 10;
+      .sticker {
+        position: absolute;
+        left: 48%;
+        transform-origin: center center;
+        border: 2px solid transparent;
+        transition: 0.05s;
+        cursor: none;
+        &:hover {
+          border: 2px solid var(--main-color);
+          &.black1,
+          &.black2,
+          &.black3,
+          &.blue1,
+          &.blue2,
+          &.blue3 {
+            .vertex {
+              opacity: 1;
+            }
+          }
+          &.long1,
+          &.long2,
+          &.long3 {
+            .vertex {
+              opacity: 1;
+            }
+          }
+        }
+        &.black1,
+        &.black2,
+        &.black3,
+        &.blue1,
+        &.blue2,
+        &.blue3 {
+          .vertex {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+            transition: 0.05s;
+            .t, .b{
+              &::before,
+              &::after{
+                content: "";
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                background: #fff;
+                border: 2px solid var(--main-color);
+              }
+            }
+            .t {
+              &::before {
+                top: -7px;
+                left: -7px;
+              }
+              &::after {
+                top: -7px;
+                right: -7px;
+              }
+            }
+            .b {
+              &::before {
+                content: "";
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                bottom: -7px;
+                left: -7px;
+                background: #fff;
+                border: 2px solid var(--main-color);
+              }
+              &::after {
+                content: "";
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                bottom: -7px;
+                right: -7px;
+                background: #fff;
+                border: 2px solid var(--main-color);
+              }
+            }
+          }
+          .sticker_wrap {
+            margin: 20px;
+            @include flex-c();
+            overflow: hidden;
+            position: absolute;
+            box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.2);
+            border-radius: 50%;
+            background: var(--main-color);
+            .img_blend {
+              width: 200%;
+              position: absolute;
+              right: -40%;
+              top: 0;
+              mix-blend-mode: color-burn;
+            }
+            &.black1 {
+              z-index: 10;
+              background: var(--main-color);
+              border: 1px solid #000;
+              .img_blend {
+                width: 120%;
+                position: absolute;
+                left: -4%;
+                top: 28%;
+                transform: rotate(62deg);
+              }
+            }
+            &.black2 {
+              background: var(--main-color);
+              .img_blend {
+                width: 120%;
+                position: absolute;
+                left: -4%;
+                top: 28%;
+                transform: rotate(62deg);
+              }
+            }
+            &.black3 {
+              transform: rotate(45deg);
+              background: var(--main-color);
+            }
+
+            &.blue1 {
+              background: #ddd;
+              .img_blend {
+                width: 200%;
+                position: absolute;
+                left: -76%;
+                top: -22%;
+                transform: rotate(140deg);
+              }
+            }
+            &.blue2 {
+              background: #ddd;
+              .img_blend {
+                width: 120%;
+                position: absolute;
+                left: -4%;
+                top: 28%;
+                transform: rotate(62deg);
+              }
+            }
+            &.blue3 {
+              background: #ddd;
+              .img_blend {
+                width: 160%;
+                position: absolute;
+              }
+            }
+          }
+        }
+        &.long1,
+        &.long2,
+        &.long3 {
+          .vertex {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            // @include po-c();
+            opacity: 0;
+            transition: 0.05s;
+
+            .t,
+            .b {
+              &::before,
+              &::after {
+                content: "";
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                background: #fff;
+                border: 2px solid var(--main-color);
+              }
+            }
+
+            .t {
+              &::before {
+                top: -7px;
+                left: -7px;
+              }
+              &::after {
+                top: -7px;
+                right: -7px;
+              }
+            }
+            .b {
+              &::before {
+                bottom: -7px;
+                left: -7px;
+              }
+              &::after {
+                bottom: -7px;
+                right: -7px;
+              }
+            }
+          }
+
+          .sticker_wrap {
+            margin: 20px;
+            width: 90%;
+            @include flex-c();
+            overflow: hidden;
+            position: absolute;
+            background: var(--main-color);
+
+            .img_blend {
+              position: absolute;
+              mix-blend-mode: color-burn;
+              width: 160%;
+              img {
+                width: 100%;
+              }
+            }
+
+            &.long1 .img_blend {
+              left: 0%;
+              bottom: 0%;
+            }
+            &.long2 .img_blend {
+              left: -8%;
+              top: 7%;
+            }
+            &.long3 .img_blend {
+              left: -13%;
+              top: -23%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ***************************************************************************************************************************
+
+@media only screen and (max-width: 700px) {
+  #intro {
+    width: 100%;
+    height: 100vh;
+    .sect_inner{
+      height: 100%;
+      @include flex-c(flex-start);
+      flex-direction: column;
+      // 이게 핸드폰은 상단 주소창이랑 하단의 메뉴바같은게 있어서 올릴 때, 내릴 때 높이의 차이가 존재함
+      .blend {
+        pointer-events: none;
+        background-image: url(../../../img/sticker_texture_bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 120%;
+        mix-blend-mode: color-burn;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .stickers {
+        // border: 1px solid red;
+        top: 70px;
+        position: relative;
+        z-index: 10;
+        .sticker {
+          left: 50%;
+          img {
+            width: 100%;
+          }
+          &.black1,
+          &.black2,
+          &.black3,
+          &.blue1,
+          &.blue2,
+          &.blue3 {
+            width: 40%;
+            height: 30%;
+            .sticker_wrap {
+              margin: 20px;
+              @include flex-c();
+              overflow: hidden;
+              position: absolute;
+              box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.2);
+              border-radius: 50%;
+            }
+          }
+          &.black1 {
+            transform: translate(-58%, 140%) rotate(-65deg);
+          }
+          &.black2 {
+            transform: translate(-4%, -23%) rotate(35deg);
+          }
+          &.blue1 {
+            transform: translate(-20%, 98%) rotate(15deg);
+          }
+          &.blue2 {
+            transform: translate(-130%, 90%) rotate(-25deg);
+          }
+          &.blue3 {
+            z-index: 10;
+            transform: translate(10%, 200%) rotate(150deg);
+          }
+          &.long1,
+          &.long2,
+          &.long3 {
+            width: 60%;
+            height: 6.5rem;
+            // border: 1px solid #f00;
+            .sticker_wrap {
+              border-radius: 20px;
+              margin: 5%;
+            }
+          }
+          &.long1 {
+            transform: translate(-118%, 186%) rotate(35deg);
+          }
+          &.long2 {
+            transform: translate(-43%, 37%) rotate(-20deg);
+          }
+          &.long3 {
+            transform: translate(38%, 100%) rotate(130deg);
+          }
+        }
+      }
+
+      .intro_title {
+        // transform: translateY(60px);
+        // color: var(--main-color);
+        color: var(--mainBg-color);
+        mix-blend-mode: difference;
+        text-transform: uppercase;
+        z-index: 99;
+        position: absolute;
+        bottom: 20%;
+        // color: var(--mainBg-color);
+        p {
+          &.publisher {
+            font-size: 14vw;
+            font-weight: 700;
+            line-height: 1;
+          }
+          &.portfolio {
+            color: var(--black600);
+          }
+        }
+      }
+    }
+  }
+}
+// ----------------------------------------------------------------------
+
+@media only screen and (min-width: 701px) {
+  main {
+    section {
+      width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+      &#intro {
+        height: 100vh;
+        .blend {
+          background-image: url(/src/img/sticker_texture_bg.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 120% 150%;
+          mix-blend-mode: color-burn;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1000;
+          pointer-events: none;
+        }
+        .intro_title {
+          transform: translateY(40px);
+          color: var(--main-color);
+          mix-blend-mode: difference;
+          text-transform: uppercase;
+          // color: var(--mainBg-color);
+          p.publisher {
+            font-size: 100px;
+            line-height: 1;
+          }
+        }
+
+        .sticker {
+          img {
+            width: 100%;
+          }
+          &.black1,
+          &.black2,
+          &.black3,
+          &.blue1,
+          &.blue2,
+          &.blue3 {
+            width: 300px;
+            height: 300px;
+          }
+          &.black1 {
+            transform: translate(-73%, 70%) rotate(-65deg);
+            z-index: 2;
+          }
+          &.black2 {
+            transform: translate(-4%, 23%) rotate(35deg);
+          }
+
+          &.blue1 {
+            transform: translate(88%, 8%) rotate(165deg);
+          }
+          &.blue2 {
+            transform: translate(-140%, 32%) rotate(-35deg);
+          }
+          &.blue3 {
+            transform: translate(25%, 76%) rotate(15deg);
+          }
+
+          &.long1,
+          &.long2,
+          &.long3 {
+            width: 427px;
+            height: 188px;
+            .sticker_wrap {
+              border-radius: 26px;
+            }
+          }
+          &.long1 {
+            transform: translate(-137%, 146%) rotate(-153deg);
+            z-index: 1;
+          }
+          &.long2 {
+            transform: translate(-53%, 38%) rotate(-20deg);
+          }
+          &.long3 {
+            transform: translate(67%, 150%) rotate(140deg);
+          }
+        }
+      }
+    }
+  }
+}
+// ----------------------------------------------------------------------
+
+@media only screen and (min-width: 900px) {
+  main {
+    section {
+      width: 1400px;
+      margin: auto;
+      width: 100%;
+      &#intro {
+        .intro_title {
+          p {
+            text-align: center;
+            font-weight: 700;
+            &.publisher {
+              // font-size: 270px;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        // .sticker {
+        //   img {
+        //     width: 100%;
+        //   }
+        // }
+      }
+    }
+  }
+}
