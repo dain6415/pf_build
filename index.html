@@ -1,11 +1,766 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test</title>
-</head>
-<body>
-  <p>sdfjslkdfjlasd flskjflkasdjf ;kasdjf;klasj df;lkasdf</p>
-</body>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hongda88.netlify.app/" />
+    <meta property="og:title" content="Dain's Portfolio" />
+    <meta name="keywords" content="portfolio, publisher" />
+    <!-- <meta property="og:image" content="https://drive.google.com/uc?id=1_mI7uZzbYDR-7ga_3gXkjWedw01dS0TU.png"> -->
+    <meta
+      property="og:image"
+      content="https://drive.google.com/file/d/1_mI7uZzbYDR-7ga_3gXkjWedw01dS0TU/view?usp=drive_link.png"
+    />
+    <!-- <meta property="og:description" content="Description Here"> -->
+
+    <meta property="og:site_name" content="Site Name" />
+    <title>Dain's Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Demo styles -->
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/hey-november");
+      html,
+      body {
+        position: relative;
+        height: 100vh;
+      }
+
+      body {
+        background: var(--mainBg-color);
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        border-bottom: 1px solid #000;
+        /* height: calc((100% - 30px) / 2) !important; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- cursor -->
+    <div id="custom_cursor"></div>
+    <!-- ************************ -->
+    <main>
+      <!-- intro -->
+      <section id="intro" data-bg="#f5f5f5">
+        <!-- header -->
+        <header id="header" role="banner">
+          <div class="header__inner">
+            <div class="header__logo">
+              <a href="#" target="_top"><span>HDAN</span></a>
+            </div>
+            <nav class="header__nav" role="navigation" aria-label="메인메뉴">
+              <ul>
+                <li class="">
+                  <a href="#intro" class="on"><span>home</span></a>
+                </li>
+                <li class="">
+                  <a href="#about"><span>about</span></a>
+                </li>
+                <li class="">
+                  <a href="#project"><span>project</span></a>
+                </li>
+                <li class="">
+                  <a href="#work"><span>work</span></a>
+                </li>
+                <!-- <li><a href="#uxui">ux/ui</a></li> -->
+              </ul>
+            </nav>
+            <div
+              class="header__nav_mobile"
+              id="headerToggle"
+              aria-controls="primary-menu"
+              aria-expanded="flase"
+              role="button"
+            >
+              <span class="mobile_menuBar"><span>menu</span></span>
+            </div>
+          </div>
+        </header>
+        <!-- content -->
+        <div class="sect_inner">
+          <div class="blend">
+            <img src="./src/img/sticker_texture_bg.jpg" alt="" />
+          </div>
+          <div class="stickers">
+            <div class="sticker black1">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
+              </div>
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
+                </div>
+                <img src="./src/img/SVG/black.svg" alt="인트로 스티커 이미지" />
+              </div>
+            </div>
+            <div class="sticker long1">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
+              </div>
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
+                </div>
+                <img
+                  src="./src/img/SVG/blue_long.svg"
+                  alt="인트로 스티커 이미지"
+                />
+              </div>
+            </div>
+            <div class="sticker blue1">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
+              </div>
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
+                </div>
+                <img src="./src/img/SVG/blue2.svg" alt="인트로 스티커 이미지" />
+              </div>
+            </div>
+            <div class="sticker black2">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
+              </div>
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
+                </div>
+                <img src="./src/img/SVG/black.svg" alt="인트로 스티커 이미지" />
+              </div>
+            </div>
+            <div class="sticker blue2">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
+              </div>
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img
+                    src="./src/img/sticker_texture_bg.jpg"
+                    alt="스티커 블렌드 이미지"
+                  />
+                </div>
+                <img src="./src/img/SVG/blue2.svg" alt="인트로 스티커 이미지" />
+              </div>
+            </div>
+            <div class="sticker long2">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
+              </div>
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img
+                    src="./src/img/sticker_texture_bg.jpg"
+                    alt="스티커 블렌드 이미지"
+                  />
+                </div>
+                <img
+                  src="./src/img/SVG/blue_long.svg"
+                  alt="인트로 스티커 이미지"
+                />
+              </div>
+            </div>
+            <div class="sticker blue3">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
+              </div>
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img
+                    src="./src/img/sticker_texture_bg.jpg"
+                    alt="스티커 블렌드 이미지"
+                  />
+                </div>
+                <img src="./src/img/SVG/blue2.svg" alt="인트로 스티커 이미지" />
+              </div>
+            </div>
+            <div class="sticker long3">
+              <div class="vertex">
+                <div class="t"></div>
+                <div class="b"></div>
+              </div>
+              <div class="sticker_wrap">
+                <div class="img_blend">
+                  <img
+                    src="./src/img/texture2.jpeg"
+                    alt="스티커 블렌드 이미지"
+                  />
+                </div>
+                <img
+                  src="./src/img/SVG/blue_long.svg"
+                  alt="인트로 스티커 이미지"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="intro_title">
+            <!-- <p class="web">web</p> -->
+            <p class="publisher">Publisher</p>
+            <!-- <p class="portfolio">portfolio</p> -->
+
+            <!-- <svg class="publisher-stroke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 60">
+              <text x="10" y="40" font-size="80" fill="black">Publisher</text>
+            </svg> -->
+
+            <p class="portfolio">UI/UX portfolio</p>
+          </div>
+        </div>
+      </section>
+
+      <nav class="header__mobile" role="navigation" aria-label="메인메뉴">
+        <div class="inner">
+          <div class="header__logo_mobile">
+            <a href="https://hongda88.netlify.app/" target="_self"
+              ><span>Dain's Portfolio</span></a
+            >
+          </div>
+          <ul>
+            <li class="">
+              <a href="#intro" class="on"><span>home</span></a>
+            </li>
+            <li class="">
+              <a href="#about"><span>about</span></a>
+            </li>
+            <li class="">
+              <a href="#project"><span>project</span></a>
+            </li>
+            <li class="">
+              <a href="#work"><span>work</span></a>
+            </li>
+            <!-- <li><a href="#uxui">ux/ui</a></li> -->
+          </ul>
+          <div class="close">
+            <span class="close_icon"></span>
+            <div class="close_bg_blend"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__mobile_filter"></div>
+
+      <!-- main ontents -->
+      <!-- about -->
+      <section id="about" data-bg="#000">
+        <div class="sect_inner">
+          <div class="sect_title">
+            <p class="po_ab">about me.</p>
+          </div>
+          <div class="info">
+            <p class="keyword">보다 나은 결과를 추구합니다</p>
+            <p class="txt txt1">
+              어디서든 쉽게 볼 수 있지만, 그 자리에서도 자신만의 색을 지닌
+              스티커처럼, 변화에 유연하게 적응하면서도 자신만의 개성과 역량을
+              온전히 발휘할 수 있는 퍼블리셔가 되고 싶습니다.
+            </p>
+            <p class="txt txt2">
+              빠르게 변화하는 웹 환경 속에서 트렌드를 읽고 적극적으로 배우며
+              적응하는 동시에, 디자인을 전공한 강점을 살려 단순한 구현을 넘어
+              사용자 경험을 고려한 웹을 만들어 나가겠습니다.<br />
+              개발과 디자인의 균형을 맞추며, 더욱 완성도 높은 결과물을 만들어
+              내는 것이 저의 목표입니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- project -->
+      <section id="project" data-bg="#000">
+        <div class="sect_inner">
+          <div class="sect_title">
+            <h2 class="po_ab">project.</h2>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  href="https://dain6415.github.io/project/p_NewJeans"
+                  target="_blank"
+                  role="button"
+                  class="bg-img"
+                >
+                  <img src="./src/img/work/new2.jpg" alt="뉴진스 배경 이미지" />
+                </a>
+                <div class="txt">
+                  <h4>
+                    <a
+                      href="https://dain6415.github.io/project/p_NewJeans"
+                      target="_blank"
+                      class="title"
+                      >NewJeans</a
+                    >
+                  </h4>
+                  <p>Grid, iframe을 활용한 뉴진스 홈페이지 리디자인</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://dain6415.github.io/project/p_SeMA/index.html"
+                  target="_blank"
+                  role="button"
+                  class="bg-img"
+                >
+                  <img
+                    src="./src/img/work/sema.jpg"
+                    alt="서울시립미술관 배경 이미지"
+                  />
+                </a>
+                <div class="txt">
+                  <h4>
+                    <a
+                      href="https://dain6415.github.io/project/p_SeMA/index.html"
+                      target="_blank"
+                      class="title"
+                      >서울시립미술관</a
+                    >
+                  </h4>
+                  <p>JAVA script를</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.figma.com/proto/qpzNqZsmUHgq9hscTeajLL/selmine?node-id=240-58&p=f&t=BKE1wjlIn9MFkXZB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=240%3A58&show-proto-sidebar=1"
+                  target="_blank"
+                  role="button"
+                  class="bg-img"
+                >
+                  <img src="./src/img/work/selmine.jpg" alt="배경 이미지" />
+                </a>
+                <div class="txt">
+                  <h4>
+                    <a
+                      href="https://www.figma.com/proto/qpzNqZsmUHgq9hscTeajLL/selmine?node-id=240-58&p=f&t=BKE1wjlIn9MFkXZB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=240%3A58&show-proto-sidebar=1"
+                      target="_blank"
+                      class="title"
+                      >selmine</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-aria">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section id="work" data-bg="#000">
+        <div class="sect_inner">
+          <div class="sect_title">
+            <h2 class="po_ab">work.</h2>
+          </div>
+          <div class="filter">
+            <p>Filter</p>
+            <ul>
+              <li class="">
+                <a href="#" data-filter="*" class="on">all</a>
+              </li>
+              <li class="">
+                <a href="#" data-filter=".clone">clone</a>
+              </li>
+              <li class="">
+                <a href="#" data-filter=".responsive">responsive</a>
+              </li>
+              <li class="">
+                <a href="#" data-filter=".create">create</a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-box">
+            <div class="left">
+              <div class="item clone responsive 에이">
+                <div class="title">
+                  <h4>에이스 침대 <span>ACE</span></h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>swiper, tab을 적극 활용한 클론 사이트입니다.</p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>반응형</li>
+                      <li>clone</li>
+                      <li>GSAP</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_ace"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >site view
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone responsive 청">
+                <div class="title">
+                  <h4>청와대</h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      과거 청와대 홈페이지를 jQuery와 JavaScript로 클론 코딩한
+                      프로젝트입니다. Swiper를 활용해 다양한 인터랙션을
+                      구현하였습니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>반응형</li>
+                      <li>clone</li>
+                      <li>GSAP</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_cheongwadae"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item create 인테">
+                <div class="title">
+                  <h4>인테리어<span>interior</span></h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      특정 아티클을 클릭하면, 해당 아티클의 외부 데이터를 Fetch
+                      API를 통해 불러와 .scene 요소에 상세 내용을 보여주는
+                      기능을 구현한 스크립트입니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>Fetch API</li>
+                      <li>create</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_cheongwadae"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone 24">
+                <div class="title">
+                  <h4>
+                    <a target="_blank" role="button"
+                      >예스24<span>yes24</span> (미완)</a
+                    >
+                  </h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>스와이퍼를</p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>반응형</li>
+                      <li>clone</li>
+                      <li>그린삭</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_yes24"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="item clone create responsive 논">
+                <div class="title">
+                  <h4>논픽션<span>Nonfiction</span></h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      논픽션 홈페이지를 리뉴얼한 사이트로 일부 요소는
+                      클론하였습니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>renewal</li>
+                      <li>clone</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_Nonfiction/index.html"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone 애플">
+                <div class="title">
+                  <h4>iPad Pro</h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      GSAP, ScrollTrigger를 활용하여 애플의 아이패드 상세페이지
+                      일부를 클론 코딩한 사이트입니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>apple</li>
+                      <li>clone</li>
+                      <li>GSAP</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_iPadPro"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone 칠성">
+                <div class="title">
+                  <h4>칠성사이다</h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      칠성사이다 메인 페이지를 클론 코딩하여 Swiper를 활용한
+                      슬라이드 효과, 스티키, 패밀리 사이트 접속 연결 등을
+                      구현하였습니다.
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>clone</li>
+                      <li>jquery</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_칠성사이다"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item clone 우담">
+                <div class="title">
+                  <h4>우담라이팅</h4>
+                  <div class="plus-icon">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="info">
+                  <p class="date">2024.04.22</p>
+                  <div class="img-box">
+                    <img src="./" alt="" />
+                  </div>
+                  <div class="txt">
+                    <p>
+                      sldkfje sidjfs ldkfja;ldk fisjdflksdjfs idjflsdkf
+                      ssjlkdfja;sldkjf sdkj
+                    </p>
+                  </div>
+                  <div class="filter-tag">
+                    <ul>
+                      <li>반응형</li>
+                      <li>clone</li>
+                      <li>그린삭</li>
+                    </ul>
+                    <a
+                      href="https://dain6415.github.io/project/w_woodam"
+                      target="_blank"
+                      role="button"
+                      class="view-btn"
+                      >view site
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="sect_inner">
+        <div class="bg">
+          <!-- <p class="thanku">THANK U</p> -->
+        </div>
+        <div class="footer_info">
+          <div class="top">
+            <p class="name">Hong Da In.</p>
+            <div class="txt">
+              <p>
+                함께하는 성장을 추구하며 협력하는 팀원이 되겠습니다. <br />
+                소중한 시간을 내어 주셔서 감사합니다.
+              </p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="my_info f_b_txt">
+              <p class="">
+                <a href="mailto:ekdlscjs4@naver.com">ekdlscjs4@naver.com</a>
+              </p>
+              <p class="">
+                <a href="tel:01085416415">010 8541 6415</a>
+              </p>
+            </div>
+            <div class="copyright f_b_txt">
+              <p><span>&copy;&nbsp;</span>2024 Hong-DaIn All Rights Reserved</p>
+            </div>
+            <div class="link f_b_txt">
+              <div class="">
+                <a href="https://github.com/dain6415/project">
+                  <img
+                    class="git"
+                    src="./src/img/github.png"
+                    alt="github 이미지"
+                  />
+                </a>
+              </div>
+              <div class="">
+                <a href="">
+                  <img
+                    src="./src/img/Notion_app_logo.png"
+                    alt="notion 이미지"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- <div class="time_area">
+              <span>한국시간</span>
+              <time class="time" id="koTime" aria-label="현재 한국 시간"></time>
+            </div> -->
+            <div class="none"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="up_btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div> -->
+    <!-- <div class="mCustomScrollbar content" data-mcs-theme="dark">
+    </div> -->
+
+    <!-- -------------------------------------------------------------------------------------------- -->
+    <!-- gsap -->
+
+  </body>
 </html>
